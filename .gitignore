@@ -1,0 +1,31 @@
+
+    # Virtual environment
+    venv/
+    env/
+    .venv/
+
+    # Python cache files
+    __pycache__/
+    *.py[cod]
+    *.pyo
+    .Python
+
+    # Jupyter Notebook checkpoints
+    .ipynb_checkpoints/
+
+    # VSCode settings
+    .vscode/
+
+    # MacOS and Windows files
+    .DS_Store
+    Thumbs.db
+
+    # Log files
+    *.log
+
+    # Other environment or package manager files
+    .env
+    .idea/
+    .mypy_cache/
+    .pytest_cache/
+    
