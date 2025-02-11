@@ -1,0 +1,14 @@
+ __pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+venv/
+
+.idea/
+*.iml
+
+api_log
+pytest_cache/
+
+
