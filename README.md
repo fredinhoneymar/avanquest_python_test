@@ -15,6 +15,10 @@ While using the API I noticed that the above token does not give me access to se
 So for this test instead of querying 2020-2023, I only queried 2023-2024.
 
 - pytest.ini used to fix some issues caused by a space in my folder names
-- the API was mocked in the unit tests
+- Unit tests are provided in the tests/ folder
+- All external API calls are mocked for consistent, offline test run
 - example.py is used to get query_example.json which gave me the API dictionnary format
-- Token stored in .env
+- Token stored in .env (.gitignore)
+- example.py used to inspect the structure of the API response
+- Outputs: match_raw_data.csv and match_team_stats.csv
+- argparse used for CLI flexibility (--seasons) with default: --seasons 2023 2024 the only accessible seasons with this token.
