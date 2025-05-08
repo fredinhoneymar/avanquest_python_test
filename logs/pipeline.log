@@ -1,181 +1,63 @@
-2025-05-06 23:36:00,712 | INFO | ... Iniciando pipeline para a temporada 2020
-2025-05-06 23:36:01,270 | INFO | ... Iniciando pipeline para a temporada 2021
-2025-05-06 23:36:01,725 | INFO | ... Iniciando pipeline para a temporada 2022
-2025-05-06 23:36:02,206 | INFO | ... Iniciando pipeline para a temporada 2023
-2025-05-06 23:43:05,155 | INFO | ... Iniciando pipeline para a temporada 2020
-2025-05-06 23:43:05,646 | INFO | ... Iniciando pipeline para a temporada 2021
-2025-05-06 23:43:06,130 | INFO | ... Iniciando pipeline para a temporada 2022
-2025-05-06 23:43:06,694 | INFO | ... Iniciando pipeline para a temporada 2023
-2025-05-06 23:44:21,562 | INFO | ... Iniciando pipeline para a temporada 2020
-2025-05-06 23:44:22,055 | INFO | ... Iniciando pipeline para a temporada 2021
-2025-05-06 23:44:22,536 | INFO | ... Iniciando pipeline para a temporada 2022
-2025-05-06 23:44:23,096 | INFO | ... Iniciando pipeline para a temporada 2023
-2025-05-06 23:46:02,079 | INFO | ... Iniciando pipeline para a temporada 2020
-2025-05-06 23:46:02,572 | INFO | ... Iniciando pipeline para a temporada 2021
-2025-05-06 23:46:03,050 | INFO | ... Iniciando pipeline para a temporada 2022
-2025-05-06 23:46:03,586 | INFO | ... Iniciando pipeline para a temporada 2023
-2025-05-06 23:50:33,440 | INFO | ... Iniciando pipeline para a temporada 2020
-2025-05-06 23:50:33,944 | INFO | ... Iniciando pipeline para a temporada 2021
-2025-05-06 23:50:34,477 | INFO | ... Iniciando pipeline para a temporada 2022
-2025-05-06 23:50:34,953 | INFO | ... Iniciando pipeline para a temporada 2023
-2025-05-06 23:52:07,706 | INFO | ... Iniciando pipeline para a temporada 2020
-2025-05-06 23:52:08,256 | INFO | ... Iniciando pipeline para a temporada 2021
-2025-05-06 23:52:08,785 | INFO | ... Iniciando pipeline para a temporada 2022
-2025-05-06 23:52:09,257 | INFO | ... Iniciando pipeline para a temporada 2023
-2025-05-07 00:12:04,969 | INFO | ... Iniciando pipeline para a temporada 2020
-2025-05-07 00:12:05,525 | INFO | ... Iniciando pipeline para a temporada 2021
-2025-05-07 00:12:06,075 | INFO | ... Iniciando pipeline para a temporada 2022
-2025-05-07 00:12:06,563 | INFO | ... Iniciando pipeline para a temporada 2023
-2025-05-07 00:17:24,688 | INFO | ... Iniciando pipeline para a temporada 2020
-2025-05-07 00:19:24,434 | INFO | ... Iniciando pipeline para a temporada 2020
-2025-05-07 00:19:24,925 | INFO | ... Iniciando pipeline para a temporada 2021
-2025-05-07 00:19:25,401 | INFO | ... Iniciando pipeline para a temporada 2022
-2025-05-07 00:19:25,948 | INFO | ... Iniciando pipeline para a temporada 2023
-2025-05-07 00:19:27,035 | INFO | ... Iniciando pipeline para a temporada 2024
-2025-05-07 00:32:29,933 | INFO | ... Iniciando pipeline para a temporada 2020
-2025-05-07 00:32:30,499 | INFO | ... Iniciando pipeline para a temporada 2021
-2025-05-07 00:32:30,982 | INFO | ... Iniciando pipeline para a temporada 2022
-2025-05-07 00:32:31,484 | INFO | ... Iniciando pipeline para a temporada 2023
-2025-05-07 00:32:32,714 | INFO | ... Iniciando pipeline para a temporada 2024
 ... Iniciando pipeline para a temporada 2020
+ Fetching data for season 2020...
+ Request error for season 2020: 403 Client Error:  for url: https://api.football-data.org/v4/competitions/PL/matches?season=2020
 ... Iniciando pipeline para a temporada 2021
+ Fetching data for season 2021...
+ Request error for season 2021: 403 Client Error:  for url: https://api.football-data.org/v4/competitions/PL/matches?season=2021
 ... Iniciando pipeline para a temporada 2022
+ Fetching data for season 2022...
+ Request error for season 2022: 403 Client Error:  for url: https://api.football-data.org/v4/competitions/PL/matches?season=2022
 ... Iniciando pipeline para a temporada 2023
-... Iniciando pipeline para a temporada 2024
-... Iniciando pipeline para a temporada 2020
-... Iniciando pipeline para a temporada 2021
-... Iniciando pipeline para a temporada 2022
-... Iniciando pipeline para a temporada 2023
-... Iniciando pipeline para a temporada 2024
-... Iniciando pipeline para a temporada 2020
-... Iniciando pipeline para a temporada 2021
-... Iniciando pipeline para a temporada 2022
-... Iniciando pipeline para a temporada 2023
-... Iniciando pipeline para a temporada 2024
-... Iniciando pipeline para a temporada 2021
-... Iniciando pipeline para a temporada 2021
-... Iniciando pipeline para a temporada 2021
-... Iniciando pipeline para a temporada 2021
-... Iniciando pipeline para a temporada 2020
-... Iniciando pipeline para a temporada 2021
-... Iniciando pipeline para a temporada 2022
-... Iniciando pipeline para a temporada 2023
-... Iniciando pipeline para a temporada 2024
-... Iniciando pipeline para a temporada 2020
-... Iniciando pipeline para a temporada 2021
-... Iniciando pipeline para a temporada 2022
-... Iniciando pipeline para a temporada 2023
-... Iniciando pipeline para a temporada 2024
-... Iniciando pipeline para a temporada 2020
-... Iniciando pipeline para a temporada 2021
-... Iniciando pipeline para a temporada 2022
-... Iniciando pipeline para a temporada 2023
-... Iniciando pipeline para a temporada 2024
-... Iniciando pipeline para a temporada 2020
-... Iniciando pipeline para a temporada 2021
-... Iniciando pipeline para a temporada 2022
-... Iniciando pipeline para a temporada 2023
-... Iniciando pipeline para a temporada 2024
-... Iniciando pipeline para a temporada 2020
-... Iniciando pipeline para a temporada 2021
-... Iniciando pipeline para a temporada 2022
-... Iniciando pipeline para a temporada 2023
-... Iniciando pipeline para a temporada 2024
-... Iniciando pipeline para a temporada 2020
-... Iniciando pipeline para a temporada 2021
-... Iniciando pipeline para a temporada 2022
-... Iniciando pipeline para a temporada 2023
+ Fetching data for season 2023...
+ 380 matches received for season 2023
+ Processed data: 20 times
+ File saved: data\epl_stats_2023.csv
  Pipeline concluída para 2023
 ... Iniciando pipeline para a temporada 2024
+ Fetching data for season 2024...
+ 380 matches received for season 2024
+ Processed data: 20 times
+ File saved: data\epl_stats_2024.csv
  Pipeline concluída para 2024
 ... Iniciando pipeline para a temporada 2020
+ Fetching data for season 2020...
+ Request error for season 2020: 403 Client Error:  for url: https://api.football-data.org/v4/competitions/PL/matches?season=2020
 ... Iniciando pipeline para a temporada 2021
+ Fetching data for season 2021...
+ Request error for season 2021: 403 Client Error:  for url: https://api.football-data.org/v4/competitions/PL/matches?season=2021
 ... Iniciando pipeline para a temporada 2022
+ Fetching data for season 2022...
+ Request error for season 2022: 403 Client Error:  for url: https://api.football-data.org/v4/competitions/PL/matches?season=2022
 ... Iniciando pipeline para a temporada 2023
+ Fetching data for season 2023...
+ 380 matches received for season 2023
+ Processed data: 20 times
+ File saved: data\epl_stats_2023.csv
  Pipeline concluída para 2023
 ... Iniciando pipeline para a temporada 2024
+ Fetching data for season 2024...
+ 380 matches received for season 2024
+ Processed data: 20 times
+ File saved: data\epl_stats_2024.csv
  Pipeline concluída para 2024
 ... Iniciando pipeline para a temporada 2020
- Buscando dados da temporada 2020...
- Erro na requisição da temporada 2020: 403 Client Error:  for url: https://api.football-data.org/v4/competitions/PL/matches?season=2020
+ Fetching data for season 2020...
+ Request error for season 2020: 403 Client Error:  for url: https://api.football-data.org/v4/competitions/PL/matches?season=2020
 ... Iniciando pipeline para a temporada 2021
- Buscando dados da temporada 2021...
- Erro na requisição da temporada 2021: 403 Client Error:  for url: https://api.football-data.org/v4/competitions/PL/matches?season=2021
+ Fetching data for season 2021...
+ Request error for season 2021: 403 Client Error:  for url: https://api.football-data.org/v4/competitions/PL/matches?season=2021
 ... Iniciando pipeline para a temporada 2022
- Buscando dados da temporada 2022...
- Erro na requisição da temporada 2022: 403 Client Error:  for url: https://api.football-data.org/v4/competitions/PL/matches?season=2022
+ Fetching data for season 2022...
+ Request error for season 2022: 403 Client Error:  for url: https://api.football-data.org/v4/competitions/PL/matches?season=2022
 ... Iniciando pipeline para a temporada 2023
- Buscando dados da temporada 2023...
- 380 partidas recebidas para 2023
- Dados processados: 20 times
- Arquivo salvo: data\epl_stats_2023.csv
+ Fetching data for season 2023...
+ 380 matches received for season 2023
+Processed data: 20 teams
+ File saved: data\epl_stats_2023.csv
  Pipeline concluída para 2023
 ... Iniciando pipeline para a temporada 2024
- Buscando dados da temporada 2024...
- 380 partidas recebidas para 2024
- Dados processados: 20 times
- Arquivo salvo: data\epl_stats_2024.csv
- Pipeline concluída para 2024
-... Iniciando pipeline para a temporada 2020
- Buscando dados da temporada 2020...
- Erro na requisição da temporada 2020: 403 Client Error:  for url: https://api.football-data.org/v4/competitions/PL/matches?season=2020
-... Iniciando pipeline para a temporada 2021
- Buscando dados da temporada 2021...
- Erro na requisição da temporada 2021: 403 Client Error:  for url: https://api.football-data.org/v4/competitions/PL/matches?season=2021
-... Iniciando pipeline para a temporada 2022
- Buscando dados da temporada 2022...
- Erro na requisição da temporada 2022: 403 Client Error:  for url: https://api.football-data.org/v4/competitions/PL/matches?season=2022
-... Iniciando pipeline para a temporada 2023
- Buscando dados da temporada 2023...
- 380 partidas recebidas para 2023
- Dados processados: 20 times
- Arquivo salvo: data\epl_stats_2023.csv
- Pipeline concluída para 2023
-... Iniciando pipeline para a temporada 2024
- Buscando dados da temporada 2024...
- 380 partidas recebidas para 2024
- Dados processados: 20 times
- Arquivo salvo: data\epl_stats_2024.csv
- Pipeline concluída para 2024
-... Iniciando pipeline para a temporada 2020
- Buscando dados da temporada 2020...
- Erro na requisição da temporada 2020: 403 Client Error:  for url: https://api.football-data.org/v4/competitions/PL/matches?season=2020
-... Iniciando pipeline para a temporada 2021
- Buscando dados da temporada 2021...
- Erro na requisição da temporada 2021: 403 Client Error:  for url: https://api.football-data.org/v4/competitions/PL/matches?season=2021
-... Iniciando pipeline para a temporada 2022
- Buscando dados da temporada 2022...
- Erro na requisição da temporada 2022: 403 Client Error:  for url: https://api.football-data.org/v4/competitions/PL/matches?season=2022
-... Iniciando pipeline para a temporada 2023
- Buscando dados da temporada 2023...
- 380 partidas recebidas para 2023
- Dados processados: 20 times
- Arquivo salvo: data\epl_stats_2023.csv
- Pipeline concluída para 2023
-... Iniciando pipeline para a temporada 2024
- Buscando dados da temporada 2024...
- 380 partidas recebidas para 2024
- Dados processados: 20 times
- Arquivo salvo: data\epl_stats_2024.csv
- Pipeline concluída para 2024
-... Iniciando pipeline para a temporada 2020
- Buscando dados da temporada 2020...
- Erro na requisição da temporada 2020: 403 Client Error:  for url: https://api.football-data.org/v4/competitions/PL/matches?season=2020
-... Iniciando pipeline para a temporada 2021
- Buscando dados da temporada 2021...
- Erro na requisição da temporada 2021: 403 Client Error:  for url: https://api.football-data.org/v4/competitions/PL/matches?season=2021
-... Iniciando pipeline para a temporada 2022
- Buscando dados da temporada 2022...
- Erro na requisição da temporada 2022: 403 Client Error:  for url: https://api.football-data.org/v4/competitions/PL/matches?season=2022
-... Iniciando pipeline para a temporada 2023
- Buscando dados da temporada 2023...
- 380 partidas recebidas para 2023
- Dados processados: 20 times
- Arquivo salvo: data\epl_stats_2023.csv
- Pipeline concluída para 2023
-... Iniciando pipeline para a temporada 2024
- Buscando dados da temporada 2024...
- 380 partidas recebidas para 2024
- Dados processados: 20 times
- Arquivo salvo: data\epl_stats_2024.csv
+ Fetching data for season 2024...
+ 380 matches received for season 2024
+Processed data: 20 teams
+ File saved: data\epl_stats_2024.csv
  Pipeline concluída para 2024

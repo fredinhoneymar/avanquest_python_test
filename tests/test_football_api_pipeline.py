@@ -32,7 +32,7 @@ def process_matches(matches, logger):
         teams.add(home_team)
         teams.add(away_team)
 
-    logger.info(f"Processed data: {len(teams)} times")
+    logger.info(f"Processed data: {len(teams)} teams")
     return teams
 
 
@@ -107,10 +107,10 @@ class TestApiClient(unittest.TestCase):
             run_pipeline_for_year(season_year, mock_logger)
             
             # Verify internal function calls via logger
-            mock_logger.info.assert_any_call(f"Buscando dados da temporada {season_year}...")
-            mock_logger.info.assert_any_call(f"2 partidas recebidas para {season_year}")
-            mock_logger.info.assert_any_call("Dados processados: 3 times")
-            mock_logger.info.assert_any_call(f"Arquivo salvo: ./output/epl_stats_{season_year}.csv")
+            mock_logger.info.assert_any_call(f"Fetching data for season {season_year}...")
+            mock_logger.info.assert_any_call(f"2 matches received for {season_year}")
+            mock_logger.info.assert_any_call("Processed data: 3 teams")
+            mock_logger.info.assert_any_call(f"File saved: ./output/epl_stats_{season_year}.csv")
 
 
 if __name__ == "__main__":

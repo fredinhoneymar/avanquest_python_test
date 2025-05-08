@@ -27,13 +27,13 @@ def process_matches(matches, logger):
         initialize_team_stats(team_stats, home)
         initialize_team_stats(team_stats, away)
 
-        # Atualiza gols
+        # Update goals
         team_stats[home]['goals_for'] += home_goals
         team_stats[home]['goals_against'] += away_goals
         team_stats[away]['goals_for'] += away_goals
         team_stats[away]['goals_against'] += home_goals
 
-        # Atualiza resultado
+        # Update result
         if home_goals > away_goals:
             team_stats[home]['wins'] += 1
             team_stats[away]['losses'] += 1
@@ -44,7 +44,7 @@ def process_matches(matches, logger):
             team_stats[home]['draws'] += 1
             team_stats[away]['draws'] += 1
 
-    logger.info(f" Processed data: {len(team_stats)} times")
+    logger.info(f"Processed data: {len(team_stats)} teams")
     return team_stats
 
 def save_to_csv(data, season_year, logger):
