@@ -61,3 +61,87 @@ Processed data: 20 teams
 Processed data: 20 teams
  File saved: data\epl_stats_2024.csv
  Pipeline concluída para 2024
+... Starting pipeline for the 2020
+ Fetching data for season 2020...
+ Request error for season 2020: 403 Client Error:  for url: https://api.football-data.org/v4/competitions/PL/matches?season=2020
+... Starting pipeline for the 2021
+ Fetching data for season 2021...
+ Request error for season 2021: 403 Client Error:  for url: https://api.football-data.org/v4/competitions/PL/matches?season=2021
+... Starting pipeline for the 2022
+ Fetching data for season 2022...
+ Request error for season 2022: 403 Client Error:  for url: https://api.football-data.org/v4/competitions/PL/matches?season=2022
+... Starting pipeline for the 2023
+ Fetching data for season 2023...
+ 380 matches received for season 2023
+Processed data: 20 teams
+ File saved: data\epl_stats_2023.csv
+ Pipeline completed for 2023
+... Starting pipeline for the 2024
+ Fetching data for season 2024...
+ 380 matches received for season 2024
+Processed data: 20 teams
+ File saved: data\epl_stats_2024.csv
+ Pipeline completed for 2024
+... Starting pipeline for the 2020
+ Fetching data for season 2020...
+ Request error for season 2020: 403 Client Error:  for url: https://api.football-data.org/v4/competitions/PL/matches?season=2020
+... Starting pipeline for the 2021
+ Fetching data for season 2021...
+ Request error for season 2021: 403 Client Error:  for url: https://api.football-data.org/v4/competitions/PL/matches?season=2021
+... Starting pipeline for the 2022
+ Fetching data for season 2022...
+ Request error for season 2022: 403 Client Error:  for url: https://api.football-data.org/v4/competitions/PL/matches?season=2022
+... Starting pipeline for the 2023
+ Fetching data for season 2023...
+ 380 matches received for season 2023
+Processed data: 20 teams
+ File saved: data\epl_stats_2023.csv
+ Pipeline completed for 2023
+... Starting pipeline for the 2024
+ Fetching data for season 2024...
+ 380 matches received for season 2024
+Processed data: 20 teams
+ File saved: data\epl_stats_2024.csv
+ Pipeline completed for 2024
+... Starting pipeline for the 2020
+ Fetching data for season 2020...
+ Request error for season 2020: 403 Client Error:  for url: https://api.football-data.org/v4/competitions/PL/matches?season=2020
+... Starting pipeline for the 2021
+ Fetching data for season 2021...
+ Request error for season 2021: 403 Client Error:  for url: https://api.football-data.org/v4/competitions/PL/matches?season=2021
+... Starting pipeline for the 2022
+ Fetching data for season 2022...
+ Request error for season 2022: 403 Client Error:  for url: https://api.football-data.org/v4/competitions/PL/matches?season=2022
+... Starting pipeline for the 2023
+ Fetching data for season 2023...
+ 380 matches received for season 2023
+Processed data: 20 teams
+ File saved: data\epl_stats_2023.csv
+ Pipeline completed for 2023
+... Starting pipeline for the 2024
+ Fetching data for season 2024...
+ 380 matches received for season 2024
+Processed data: 20 teams
+ File saved: data\epl_stats_2024.csv
+ Pipeline completed for 2024
+... Starting pipeline for the 2020
+ Fetching data for season 2020...
+ Request error for season 2020: 403 Client Error:  for url: https://api.football-data.org/v4/competitions/PL/matches?season=2020
+... Starting pipeline for the 2021
+ Fetching data for season 2021...
+ Request error for season 2021: 403 Client Error:  for url: https://api.football-data.org/v4/competitions/PL/matches?season=2021
+... Starting pipeline for the 2022
+ Fetching data for season 2022...
+ Request error for season 2022: 403 Client Error:  for url: https://api.football-data.org/v4/competitions/PL/matches?season=2022
+... Starting pipeline for the 2023
+ Fetching data for season 2023...
+ 380 matches received for season 2023
+Processed data: 20 teams
+ File saved: data\epl_stats_2023.csv
+ Pipeline completed for 2023
+... Starting pipeline for the 2024
+ Fetching data for season 2024...
+ 380 matches received for season 2024
+Processed data: 20 teams
+ File saved: data\epl_stats_2024.csv
+ Pipeline completed for 2024

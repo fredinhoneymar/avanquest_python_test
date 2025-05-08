@@ -3,28 +3,28 @@ from utils.data_processing import process_matches, save_to_csv
 from config.settings import SEASON_YEARS
 from config.logging_config import setup_logger
 
-# Inicializando o logger
+# Initialize the logger
 logger = setup_logger(__name__)
 
 def run_pipeline_for_year(year, logger):
-    """Executa o pipeline de dados para uma temporada específica"""
-    logger.info(f"... Iniciando pipeline para a temporada {year}")
+    """Executes the data pipeline for a specific season"""
+    logger.info(f"... Starting pipeline for the {year}")
     
-    # Obtém os jogos para o ano
+    # Get the matches for the year
     matches = get_matches(year, logger)
     
     if matches:
-        # Processa os jogos e salva os dados em CSV
+        # Process the matches and save the data to CSV
         stats = process_matches(matches, logger)
         save_to_csv(stats, year, logger)
-        logger.info(f" Pipeline concluída para {year}")
+        logger.info(f" Pipeline completed for {year}")
     else:
-        logger.warning(f"⚠ Nenhum jogo encontrado para o ano {year}")
+        logger.warning(f"⚠ No matches found for the {year}")
 
 def main():
-    """Função principal para rodar o pipeline de várias temporadas"""
+    """Main function to run the pipeline for multiple seasons"""
     for year in SEASON_YEARS:
-        run_pipeline_for_year(year, logger)  # Passando logger corretamente para o pipeline
+        run_pipeline_for_year(year, logger) 
 
 if __name__ == "__main__":
     main()
