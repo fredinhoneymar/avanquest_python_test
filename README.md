@@ -1,11 +1,12 @@
-# test
-football
-API:
+# Premier League Data Pipeline
 
-API initial Url: https://api.football-data.org/
+This is a Python data pipeline project that consumes the football-data.org API, processes match information from the Premier League, and saves the extracted data into CSV files. It is built with a modular structure for easy maintenance and extension.
 
-API account name: testing.data999@gmail.com
+## Features
 
-API token information:
-
-Please modify your client to use a HTTP header named "X-Auth-Token" with the underneath personal token as value. Your token: 12abfbaacdab48bc8948ed6061925e1f
+- Query Premier League matches by season
+- Process data to identify unique teams
+- Save results to `.csv` files
+- Modular structure focused on readability and reusability
+- Detailed logging during execution
+- Automated testing using `unittest` and `mock`
