@@ -1,6 +1,6 @@
 API:
   url: "https://api.football-data.org/v4/"
-  token: "12abfbaacdab48bc8948ed6061925e1f" #"10867783d8e145f894e1c713d2188c0f"
+  token: "12abfbaacdab48bc8948ed6061925e1f"
   account: "testing.data999@gmail.com"
   timeout: 30 # seconds
   retry_attempts: 3
