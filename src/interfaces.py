@@ -56,27 +56,29 @@ class IDataProcessor(ABC):
 	"""Interface for data processors that transform API data to other formats."""
 	
 	@abstractmethod
-	def process(self, data: List[Dict[str, Any]]) -> IDataProcessor:
-		"""
-		Process the input data.
-		
-		Args:
-			data: List of data dictionaries to process
-			
-		Returns:
-			Self reference for method chaining
-		"""
+	def process(self, data_list: List[Dict[str, Any]]) -> IDataProcessor:
+		"""Process the input data."""
 		pass
 		
 	@abstractmethod
-	def save_to_csv(self, output_path: Optional[str] = None) -> None:
-		"""
-		Save processed data to CSV file.
-		
-		Args:
-			output_path: Optional path where to save the CSV
-			
-		Returns:
-			Self reference for method chaining
-		"""
+	def save_to_csv(self, output_path: Optional[str] = None) -> IDataProcessor:
+		"""Save processed data to CSV file."""
+		pass
+	
+	@abstractmethod
+	def check_data_quality(self) -> IDataProcessor:
+		"""Run data quality checks on the processed data."""
+		pass
+	
+class IDataQualityChecker(ABC):
+	"""Interface for data quality checkers."""
+	
+	@abstractmethod
+	def check_data_quality(self, data: List[Dict[str, Any]], expected_columns: List[str] = None) -> Dict[str, Any]:
+		"""Check the quality of processed data and generate a report."""
+		pass
+	
+	@abstractmethod
+	def save_report(self, prefix: str = "data_quality_report") -> None:
+		"""Save the quality report to a file."""
 		pass
