@@ -24,11 +24,11 @@ class APIConnector(IConnector):
 	"""
 	_instance = None
 	
-	def __new__(cls, config: Optional[IConfigProvider] = None):
+	def __new__(cls, config: Optional[IConfigProvider] = None) -> APIConnector:
 		"""Ensure only one instance of APIConnector exists."""
 		if cls._instance is None:
 			if config is None:
-				raise ValueError("Configuration must be provided for initial instantiation")
+				raise ValueError('Configuration must be provided for initial instantiation')
 			cls._instance = super(APIConnector, cls).__new__(cls)
 			cls._instance._initialized = False
 		return cls._instance
@@ -74,8 +74,8 @@ class APIConnector(IConnector):
 
 	def _clear_expired_cache(self) -> None:
 		"""
-		Clear expired cache entries based on cache_ttl from configuration.
-		This is automatically called during initialization.
+		Clear expired cache entries based on cache_ttl value from configuration.
+		This is automatically called during initialization if caching is enabled.
 		"""
 		if not self._enable_caching or not self._cache_dir or not hasattr(self, '_cache_ttl'):
 			return
@@ -174,13 +174,6 @@ class APIConnector(IConnector):
 					cache_key = cache_data['cache_key']
 					self._cache[cache_key] = cache_data['data']
 					count += 1
-				# Fall back to reconstructing cache key
-				elif 'url' in cache_data:
-					url = cache_data.get('url', '')
-					if url:
-						cache_key = f"GET:{url}:{{}}:{{}}"
-						self._cache[cache_key] = cache_data['data']
-						count += 1
 			except Exception as e:
 				self.logger.warning(f"Error loading cache file {cache_file}: {e}")
 		
@@ -208,8 +201,7 @@ class APIConnector(IConnector):
 	def fetch(self, 
 			endpoint: Optional[Union[str, Dict[str, Any]]] = None, 
 			method: str = 'GET',
-			params: Optional[Dict[str, Any]] = None,
-			body: Optional[Dict[str, Any]] = None
+			params: Optional[Dict[str, Any]] = None
 		) -> Dict[str, Any]:
 		"""
 		Fetch data with the specified endpoint and method,
@@ -217,9 +209,8 @@ class APIConnector(IConnector):
 		
 		Args:
 			endpoint: Optional endpoint override
-			method: HTTP method (GET, POST, etc.)
+			method: HTTP method (fetch should only support GET)
 			params: Query parameters
-			body: Request body for POST/PUT requests
 			
 		Returns:
 			API response as dictionary
@@ -227,18 +218,18 @@ class APIConnector(IConnector):
 		# Use provided endpoint or the one set previously
 		working_endpoint = endpoint if endpoint else self._current_endpoint
 		if not working_endpoint:
-			raise ValueError("No endpoint specified. Call set_endpoint() first or provide endpoint parameter.")
-		
+			raise ValueError('No endpoint specified. Call set_endpoint() first or provide endpoint parameter.')
+
 		# Build request parameters
 		path = working_endpoint.get('path', '')
 		path = path.lstrip('/') if isinstance(path, str) else path
 		params = params or working_endpoint.get('params', {})
 		
-		# Build URL and add query parameters if needed
+		# Build URL and add query parameters
 		url = urljoin(self.base_url, path)
 		
 		# Check cache before making request
-		cache_key = f"{method}:{url}:{json.dumps(params or {}, sort_keys=True)}:{json.dumps(body or {}, sort_keys=True)}"
+		cache_key = f"{method}:{url}:{json.dumps(params or {}, sort_keys=True)}"
 		if self._enable_caching and method == 'GET' and cache_key in self._cache:
 			self.logger.info(f"Using cached response for {url}?{urlencode(params or {})}")
 			setattr(self, '_isSuccess', True)
@@ -253,12 +244,6 @@ class APIConnector(IConnector):
 			try:
 				if method == 'GET':
 					response = requests.get(url, headers=self.headers, params=params, timeout=self.timeout)
-				elif method == 'POST':
-					response = requests.post(url, headers=self.headers, params=params, 
-											json=body, timeout=self.timeout)
-				elif method == 'PUT':
-					response = requests.put(url, headers=self.headers, params=params, 
-											json=body, timeout=self.timeout)
 				else:
 					raise ValueError(f"Unsupported HTTP method: {method}")
 				
@@ -266,11 +251,15 @@ class APIConnector(IConnector):
 				response.raise_for_status()
 				
 				# Parse and cache response
-				data = response.json()
-				if self._enable_caching and method == 'GET':
-					self.logger.debug(f"Storing response in cache for {url}")
-					self._cache[cache_key] = data
-					self._save_cache_to_file(cache_key, data)
+				try:
+					data = response.json()
+					if self._enable_caching and method == 'GET':
+							self.logger.debug(f"Storing response in cache for {url}")
+							self._cache[cache_key] = data
+							self._save_cache_to_file(cache_key, data)
+				except json.JSONDecodeError as e:
+					self.logger.warning(f"Failed to decode JSON response: {e}")
+					return False, {'error': f"JSON decode error: {e}"}
 				
 				# If the request was successful
 				setattr(self, '_isSuccess', True)
@@ -289,13 +278,15 @@ class APIConnector(IConnector):
 				# See: https://docs.football-data.org/general/v4/policies.html#_request_throttling
 				if response.status_code == 429:
 					wait_time = int(response.headers.get('Retry-After', retries * 2 + 1))
-					self.logger.warning(f"Rate limited. Waiting {wait_time} seconds")
+					self.logger.error(f"Rate limited. Waiting {wait_time} seconds")
 					time.sleep(wait_time)
+				# Handle subscription limitations
+				# See: https://docs.football-data.org/general/v4/errors.html#_http_error_codes_returned
 				elif response.status_code == 403:
-					self.logger.debug(f"""Access denied: 
-					{e}, 
-					This endpoint may require a paid subscription tier at football-data.org"""
-					)
+					self.logger.error(f"""Access denied:
+				  {e}, 
+				  This endpoint may require a paid subscription tier at football-data.org"""
+				  )
 					setattr(self, '_isSuccess', False)
 					raise
 				else:
@@ -312,11 +303,6 @@ class APIConnector(IConnector):
 				time.sleep(wait_time)
 				
 			retries += 1
-			
-	def clear_cache(self) -> None:
-		"""Clear the response cache."""
-		self._cache = {}
-		self.logger.debug("Request cache cleared")
 		
 	def enable_caching(self, enable: bool) -> None:
 		"""Enable or disable caching at runtime if needed."""
