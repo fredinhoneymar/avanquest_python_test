@@ -66,8 +66,8 @@ class Configuration(IConfigProvider):
 		
 		# Set up logging
 		self._initialize_logging(loglevel)
-		self._logger.debug("Configuration initialized")
-		
+		self._logger.debug('Configuration initialized')
+
 	def _initialize_directories(self) -> List[Path]:
 		"""Create required directories."""
 		paths_created = []
@@ -124,8 +124,8 @@ class Configuration(IConfigProvider):
 		if self.isLoadedFromFile:
 			self._logger.info(f"Configuration loaded from {self._config_path}")
 		else:
-			self._logger.info("Using default configuration")
-	
+			self._logger.info('Using default configuration')
+
 	def _load_default_config(self) -> Dict[str, Any]:
 		"""Load the default configuration."""
 		return {
@@ -145,6 +145,8 @@ class Configuration(IConfigProvider):
 			# Optimization settings
 			'enable_caching': False,
 			'cache_ttl': 10,  # seconds
+			'workers': 4,
+			'batch_size': 1000,
 
 			# Reporting
 			'data_quality_report': True,
