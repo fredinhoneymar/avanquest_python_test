@@ -3,139 +3,27 @@
 
 # main.py
 # This script serves as the entry point for the application.
+# It orchestrates the data ingestion pipeline by calling the API and processing the data.
+# It also includes a test mode for running unit tests.
+
+__author__ = 'Michael Garancher'
+__email__ = 'michaelgarancher1@gmail.com'
+__version__ = '1.0.0'
 
 import sys
-import argparse
 import traceback
-import json
+from importlib.util import spec_from_file_location, module_from_spec
 import concurrent.futures
-from itertools import product
 from pathlib import Path
-from typing import Dict, List, Any, Union, Optional, Tuple
 
 from configuration import Configuration
 from apiconnector import APIConnector
 from processors import PremierLeagueDataProcessor
 
-# Add the parent directory to the system path
-if str(Path(__file__).resolve().parent) not in sys.path:
-	sys.path.append(str(Path(__file__).resolve().parent))
-
-
-def parse_params_to_dict(param_list: List[str]) -> Dict[str, str]:
-	"""
-	Helper function to convert a list of parameters in the format 'key=value' to a dictionary.
-	
-	Args:
-		param_list: List of strings in 'key=value' format
-		
-	Returns:
-		Dictionary with parsed parameters
-	"""
-	params_dict = {}
-	for param in param_list:
-		try:
-			key, value = param.split('=', 1)
-			params_dict[key] = value
-		except ValueError as e:
-			print(f"Error parsing parameter '{param}': {e}")
-			traceback.print_exc()
-	return params_dict
-
-def parse_list_param(value: Any) -> Union[List[Union[int, str]], Any]:
-	"""
-	Helper function to parse a parameter value that might be in list format [val1,val2,...]
-	
-	Args:
-		value: The value to parse, potentially in list format
-		
-	Returns:
-		List of values if input was a list format string, otherwise the original value
-	"""
-	if isinstance(value, str) and value.startswith('[') and value.endswith(']'):
-		# Remove brackets and split by comma
-		values = value[1:-1].split(',')
-		# Convert numeric values to integers
-		result = []
-		for val in values:
-			val = val.strip()
-			if val.isdigit():
-				result.append(int(val))
-			else:
-				result.append(val)
-		return result
-	return value
-
-def process_multi_value_params(params: Dict[str, Any]) -> List[Dict[str, Any]]:
-	"""
-	Helper function to process parameters with multiple values and generate all combinations.
-	
-	Args:
-		params: Dictionary of parameters where some values might be lists
-		
-	Returns:
-		List of parameter dictionaries to use in separate API calls
-	"""
-	# Separate fixed and multi-value parameters
-	fixed_params = {k: v for k, v in params.items() if not isinstance(v, list)}
-	multi_params = {k: v for k, v in params.items() if isinstance(v, list)}
-	
-	# No multi-value params case
-	if not multi_params:
-		return [params]
-	
-	# Generate all combinations using itertools
-	keys = multi_params.keys()
-	values = multi_params.values()
-	combinations = product(*values)
-	
-	# Merge with fixed parameters
-	result = []
-	for combo in combinations:
-		param_dict = fixed_params.copy()
-		param_dict.update(dict(zip(keys, combo)))
-		result.append(param_dict)
-		
-	return result
-
-def make_api_call(api_connector: APIConnector, 
-				  endpoint: str, 
-				  param_dict: Dict[str, Any], 
-				  logger: Any
-				) -> Tuple[Dict[str, Any], bool, Dict[str, Any]]:
-	"""
-	Helper function to make a single API call.
-	This function is designed to be used with ThreadPoolExecutor.
-	
-	Args:
-		api_connector: Initialized API connector instance
-		endpoint: API endpoint to call
-		param_dict: Parameter dictionary for this call
-		logger: Logger instance
-		
-	Returns:
-		Tuple of (param_dict, success_flag, response_data)
-	"""
-	try:
-		# Convert param_dict to string for logging
-		param_str = ", ".join(f"{k}={v}" for k, v in param_dict.items())
-		logger.debug(f"Making API call to {endpoint} with params: {param_str}")
-		
-		# Make the API call
-		isSuccess, data = api_connector.set_endpoint(endpoint).fetch(params=param_dict)
-		
-		if isSuccess:
-			logger.debug(f"API call to {endpoint} with {param_str} succeeded")
-			return (param_dict, True, data)
-		else:
-			error_message = data.get('message', 'Unknown error')
-			logger.warning(f"API call to {endpoint} with {param_str} failed: {error_message}")
-			return (param_dict, False, data)
-			
-	except Exception as e:
-		logger.error(f"Exception during API call to {endpoint}: {str(e)}")
-		logger.debug(traceback.format_exc())
-		return (param_dict, False, {"error": str(e)})
+from utils import (
+	create_arg_parser, parse_params_to_dict, parse_list_param, 
+	process_multi_value_params, make_api_call
+)
 
 
 def main(endpoint: str, loglevel: str, **params ) -> int:
@@ -159,23 +47,16 @@ def main(endpoint: str, loglevel: str, **params ) -> int:
 	# Initialize the API connector with the configuration
 	api_connector = APIConnector(config)
 	
-	# Parse any list parameters
+	# Parse any list parameters to get all parameter combinations
 	parsed_params = {}
 	for key, value in params.items():
 		parsed_params[key] = parse_list_param(value)
-	
-	# Process multi-value parameters to get all parameter combinations
+
 	param_combinations = process_multi_value_params(parsed_params)
-	
-	if len(param_combinations) > 1:
-		logger.info(f"Making {len(param_combinations)} API calls for different parameter combinations")
 	
 	# Store results from successful calls
 	successful_results = []
 	failed_params = []
-	
-	# Log the parameters being used for the API call
-	logger.debug(f"Parameter combinations: {json.dumps(param_combinations, indent=2)}")
 
 	# Make API calls for each parameter combination
 	with concurrent.futures.ThreadPoolExecutor(max_workers=config.get_config('workers')) as executor:
@@ -196,51 +77,88 @@ def main(endpoint: str, loglevel: str, **params ) -> int:
 				failed_params.append((param_dict, error_message))
 		
 	if failed_params:
-		logger.warning("Failed parameter combinations:")
+		logger.debug('Failed parameter combinations:')
 		for params, error in failed_params:
-			logger.warning(f"- {params}: {error}")
-	
+			logger.debug(f"- {params}: {error}")
+
 	# If none of the calls were successful, return error code
 	if not successful_results:
 		return 1
 
-	# Process the data if it's Premier League standings
+	# Process the data if it's the standings endpoint
 	if '/standings' in endpoint:
 		processor = PremierLeagueDataProcessor(config)
 		processor.process(successful_results).save_to_csv()
-				
+
+		# Check data quality if enabled
+		if hasattr(processor, 'quality_enabled') and processor.quality_enabled:
+			processor.check_data_quality()
 
 	# Return success code
 	return 0
 
+def run_tests() -> int:
+	"""Run unit tests using the main_unittest.py orchestrator."""
+
+	# Find the path to the test orchestrator
+	src_dir = Path(__file__).resolve().parent
+	project_dir = src_dir.parent
+	test_dir = project_dir / 'tests'
+	orchestrator_path = test_dir / 'main_unittest.py'
+
+	if not orchestrator_path.exists():
+		print(f"Error: Test orchestrator not found at {orchestrator_path}")
+		return 1
+	
+	# Add the test directory to Python's path
+	sys.path.insert(0, str(project_dir))
+	sys.path.insert(0, str(test_dir))
+	
+	# Import the test orchestrator module
+	try:
+		spec = spec_from_file_location('main_unittest', orchestrator_path)
+		main_unittest = module_from_spec(spec)
+		spec.loader.exec_module(main_unittest)
+		
+		# Run all tests with default settings
+		return main_unittest.main()
+	except Exception as e:
+		print(f"Error running tests: {e}")
+		traceback.print_exc()
+		return 1
+
 
 if __name__ == "__main__":
+	# Add the parent directory to the system path for proper module imports
+	# This is necessary if the script is run directly from the src directory
+	if str(Path(__file__).resolve().parent) not in sys.path:
+		sys.path.append(str(Path(__file__).resolve().parent))
+
 	# Create argument parser
-	parser = argparse.ArgumentParser(description='Football Data API Client')
-	parser.add_argument('endpoint', help='API endpoint (e.g., /competitions/PL/standings)')
-	parser.add_argument('--params', '-p', nargs='+', help='API parameters as key=value pairs', default=[])
-	parser.add_argument('--loglevel', choices=['DEBUG', 'INFO', 'WARNING', 'ERROR'], 
-						default='INFO', help='Set the logging level')
+	parser = create_arg_parser()
 	
 	# Parse arguments
 	args = parser.parse_args()
 		
-	# Convert params list to dictionary
-	params_dict = {}
-	for param in args.params:
+	# Check if we're running in test mode
+	if args.test:
+		sys.exit(run_tests())
+	# Else run normal operation
+	else:
+		# Check if an endpoint is provided
+		if not args.endpoint:
+			parser.error('Parameter required: endpoint')
+			sys.exit(1)
+			
+		# Convert params list to dictionary
+		params_dict = parse_params_to_dict(args.params)
+		
+		# Call main function with parsed arguments
 		try:
-			key, value = param.split('=', 1)
-			params_dict[key] = value
-		except ValueError as e:
-			print(f"Error parsing parameter '{param}': {e}")
+			exit_code = main(args.endpoint, loglevel=args.loglevel, **params_dict)
+			sys.exit(exit_code)
+		except Exception as e:
+			print(f"Unhandled exception: {e}")
 			traceback.print_exc()
-	
-	# Call main function with parsed arguments
-	try:
-		ret = main(args.endpoint, loglevel=args.loglevel, **params_dict)
-		sys.exit(ret)
-	except Exception as e:
-		print(f"Unhandled exception: {e}")
-		traceback.print_exc()
-		sys.exit(1)
+			sys.exit(1)
 		
