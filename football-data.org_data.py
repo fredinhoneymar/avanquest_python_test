@@ -57,6 +57,8 @@ for match in game_data['matches']:
         team_stats[away_team]['drawn'] += 1
 
 df = pd.DataFrame.from_dict(team_stats, orient='index')
+df.reset_index(inplace=True)
+df.rename(columns={'index': 'team name'}, inplace=True)
 
 print(df.to_string())
 
