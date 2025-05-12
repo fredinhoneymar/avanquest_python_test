@@ -1,0 +1,121 @@
+Season,Stage,TeamName,Won,Draw,Lost,GoalsFor,GoalsAgainst,ProcessedAt,DataSource
+2023,REGULAR_SEASON_TOTAL,Manchester City FC,28,7,3,96,34,2025-05-11T14:12:12.574231,https://api.football-data.org/v4/
+2023,REGULAR_SEASON_TOTAL,Arsenal FC,28,5,5,91,29,2025-05-11T14:12:12.574231,https://api.football-data.org/v4/
+2023,REGULAR_SEASON_TOTAL,Liverpool FC,24,10,4,86,41,2025-05-11T14:12:12.574231,https://api.football-data.org/v4/
+2023,REGULAR_SEASON_TOTAL,Aston Villa FC,20,8,10,76,61,2025-05-11T14:12:12.574231,https://api.football-data.org/v4/
+2023,REGULAR_SEASON_TOTAL,Tottenham Hotspur FC,20,6,12,74,61,2025-05-11T14:12:12.574231,https://api.football-data.org/v4/
+2023,REGULAR_SEASON_TOTAL,Chelsea FC,18,9,11,77,63,2025-05-11T14:12:12.574231,https://api.football-data.org/v4/
+2023,REGULAR_SEASON_TOTAL,Newcastle United FC,18,6,14,85,62,2025-05-11T14:12:12.574231,https://api.football-data.org/v4/
+2023,REGULAR_SEASON_TOTAL,Manchester United FC,18,6,14,57,58,2025-05-11T14:12:12.574231,https://api.football-data.org/v4/
+2023,REGULAR_SEASON_TOTAL,West Ham United FC,14,10,14,60,74,2025-05-11T14:12:12.574231,https://api.football-data.org/v4/
+2023,REGULAR_SEASON_TOTAL,Crystal Palace FC,13,10,15,57,58,2025-05-11T14:12:12.574231,https://api.football-data.org/v4/
+2023,REGULAR_SEASON_TOTAL,Brighton & Hove Albion FC,12,12,14,55,62,2025-05-11T14:12:12.574231,https://api.football-data.org/v4/
+2023,REGULAR_SEASON_TOTAL,Everton FC,13,9,16,40,51,2025-05-11T14:12:12.574231,https://api.football-data.org/v4/
+2023,REGULAR_SEASON_TOTAL,AFC Bournemouth,13,9,16,54,67,2025-05-11T14:12:12.574231,https://api.football-data.org/v4/
+2023,REGULAR_SEASON_TOTAL,Fulham FC,13,8,17,55,61,2025-05-11T14:12:12.574231,https://api.football-data.org/v4/
+2023,REGULAR_SEASON_TOTAL,Wolverhampton Wanderers FC,13,7,18,50,65,2025-05-11T14:12:12.574231,https://api.football-data.org/v4/
+2023,REGULAR_SEASON_TOTAL,Brentford FC,10,9,19,56,65,2025-05-11T14:12:12.574231,https://api.football-data.org/v4/
+2023,REGULAR_SEASON_TOTAL,Nottingham Forest FC,9,9,20,49,67,2025-05-11T14:12:12.574231,https://api.football-data.org/v4/
+2023,REGULAR_SEASON_TOTAL,Luton Town FC,6,8,24,52,85,2025-05-11T14:12:12.574231,https://api.football-data.org/v4/
+2023,REGULAR_SEASON_TOTAL,Burnley FC,5,9,24,41,78,2025-05-11T14:12:12.574231,https://api.football-data.org/v4/
+2023,REGULAR_SEASON_TOTAL,Sheffield United FC,3,7,28,35,104,2025-05-11T14:12:12.574231,https://api.football-data.org/v4/
+2023,REGULAR_SEASON_HOME,Liverpool FC,15,3,1,49,17,2025-05-11T14:12:12.574231,https://api.football-data.org/v4/
+2023,REGULAR_SEASON_HOME,Manchester City FC,14,5,0,51,16,2025-05-11T14:12:12.574231,https://api.football-data.org/v4/
+2023,REGULAR_SEASON_HOME,Arsenal FC,15,2,2,48,16,2025-05-11T14:12:12.574231,https://api.football-data.org/v4/
+2023,REGULAR_SEASON_HOME,Newcastle United FC,12,4,3,49,22,2025-05-11T14:12:12.574231,https://api.football-data.org/v4/
+2023,REGULAR_SEASON_HOME,Aston Villa FC,12,4,3,48,28,2025-05-11T14:12:12.574231,https://api.football-data.org/v4/
+2023,REGULAR_SEASON_HOME,Tottenham Hotspur FC,13,0,6,38,27,2025-05-11T14:12:12.574231,https://api.football-data.org/v4/
+2023,REGULAR_SEASON_HOME,Chelsea FC,11,4,4,44,26,2025-05-11T14:12:12.574231,https://api.football-data.org/v4/
+2023,REGULAR_SEASON_HOME,Manchester United FC,10,3,6,31,28,2025-05-11T14:12:12.574231,https://api.football-data.org/v4/
+2023,REGULAR_SEASON_HOME,Brighton & Hove Albion FC,8,6,5,30,27,2025-05-11T14:12:12.574231,https://api.football-data.org/v4/
+2023,REGULAR_SEASON_HOME,Fulham FC,9,2,8,31,24,2025-05-11T14:12:12.574231,https://api.football-data.org/v4/
+2023,REGULAR_SEASON_HOME,West Ham United FC,7,8,4,31,28,2025-05-11T14:12:12.574231,https://api.football-data.org/v4/
+2023,REGULAR_SEASON_HOME,Crystal Palace FC,8,4,7,37,26,2025-05-11T14:12:12.574231,https://api.football-data.org/v4/
+2023,REGULAR_SEASON_HOME,Everton FC,8,4,7,22,18,2025-05-11T14:12:12.574231,https://api.football-data.org/v4/
+2023,REGULAR_SEASON_HOME,AFC Bournemouth,7,6,6,27,28,2025-05-11T14:12:12.574231,https://api.football-data.org/v4/
+2023,REGULAR_SEASON_HOME,Wolverhampton Wanderers FC,8,3,8,26,30,2025-05-11T14:12:12.574231,https://api.football-data.org/v4/
+2023,REGULAR_SEASON_HOME,Brentford FC,5,7,7,29,34,2025-05-11T14:12:12.574231,https://api.football-data.org/v4/
+2023,REGULAR_SEASON_HOME,Nottingham Forest FC,5,5,9,27,30,2025-05-11T14:12:12.574231,https://api.football-data.org/v4/
+2023,REGULAR_SEASON_HOME,Luton Town FC,4,4,11,28,37,2025-05-11T14:12:12.574231,https://api.football-data.org/v4/
+2023,REGULAR_SEASON_HOME,Burnley FC,2,4,13,19,43,2025-05-11T14:12:12.574231,https://api.football-data.org/v4/
+2023,REGULAR_SEASON_HOME,Sheffield United FC,2,4,13,19,57,2025-05-11T14:12:12.574231,https://api.football-data.org/v4/
+2023,REGULAR_SEASON_AWAY,Manchester City FC,14,2,3,45,18,2025-05-11T14:12:12.574231,https://api.football-data.org/v4/
+2023,REGULAR_SEASON_AWAY,Arsenal FC,13,3,3,43,13,2025-05-11T14:12:12.574231,https://api.football-data.org/v4/
+2023,REGULAR_SEASON_AWAY,Liverpool FC,9,7,3,37,24,2025-05-11T14:12:12.574231,https://api.football-data.org/v4/
+2023,REGULAR_SEASON_AWAY,Aston Villa FC,8,4,7,28,33,2025-05-11T14:12:12.574231,https://api.football-data.org/v4/
+2023,REGULAR_SEASON_AWAY,Tottenham Hotspur FC,7,6,6,36,34,2025-05-11T14:12:12.574231,https://api.football-data.org/v4/
+2023,REGULAR_SEASON_AWAY,Manchester United FC,8,3,8,26,30,2025-05-11T14:12:12.574231,https://api.football-data.org/v4/
+2023,REGULAR_SEASON_AWAY,Chelsea FC,7,5,7,33,37,2025-05-11T14:12:12.574231,https://api.football-data.org/v4/
+2023,REGULAR_SEASON_AWAY,West Ham United FC,7,2,10,29,46,2025-05-11T14:12:12.574231,https://api.football-data.org/v4/
+2023,REGULAR_SEASON_AWAY,AFC Bournemouth,6,3,10,27,39,2025-05-11T14:12:12.574231,https://api.football-data.org/v4/
+2023,REGULAR_SEASON_AWAY,Crystal Palace FC,5,6,8,20,32,2025-05-11T14:12:12.574231,https://api.football-data.org/v4/
+2023,REGULAR_SEASON_AWAY,Newcastle United FC,6,2,11,36,40,2025-05-11T14:12:12.574231,https://api.football-data.org/v4/
+2023,REGULAR_SEASON_AWAY,Everton FC,5,5,9,18,33,2025-05-11T14:12:12.574231,https://api.football-data.org/v4/
+2023,REGULAR_SEASON_AWAY,Wolverhampton Wanderers FC,5,4,10,24,35,2025-05-11T14:12:12.574231,https://api.football-data.org/v4/
+2023,REGULAR_SEASON_AWAY,Brighton & Hove Albion FC,4,6,9,25,35,2025-05-11T14:12:12.574231,https://api.football-data.org/v4/
+2023,REGULAR_SEASON_AWAY,Fulham FC,4,6,9,24,37,2025-05-11T14:12:12.574231,https://api.football-data.org/v4/
+2023,REGULAR_SEASON_AWAY,Brentford FC,5,2,12,27,31,2025-05-11T14:12:12.574231,https://api.football-data.org/v4/
+2023,REGULAR_SEASON_AWAY,Nottingham Forest FC,4,4,11,22,37,2025-05-11T14:12:12.574231,https://api.football-data.org/v4/
+2023,REGULAR_SEASON_AWAY,Burnley FC,3,5,11,22,35,2025-05-11T14:12:12.574231,https://api.football-data.org/v4/
+2023,REGULAR_SEASON_AWAY,Luton Town FC,2,4,13,24,48,2025-05-11T14:12:12.574231,https://api.football-data.org/v4/
+2023,REGULAR_SEASON_AWAY,Sheffield United FC,1,3,15,16,47,2025-05-11T14:12:12.574231,https://api.football-data.org/v4/
+2024,REGULAR_SEASON_TOTAL,Liverpool FC,25,8,3,83,37,2025-05-11T14:12:12.574231,https://api.football-data.org/v4/
+2024,REGULAR_SEASON_TOTAL,Arsenal FC,18,14,4,66,33,2025-05-11T14:12:12.574231,https://api.football-data.org/v4/
+2024,REGULAR_SEASON_TOTAL,Newcastle United FC,20,6,10,68,45,2025-05-11T14:12:12.574231,https://api.football-data.org/v4/
+2024,REGULAR_SEASON_TOTAL,Manchester City FC,19,8,9,67,43,2025-05-11T14:12:12.574231,https://api.football-data.org/v4/
+2024,REGULAR_SEASON_TOTAL,Chelsea FC,18,9,9,62,43,2025-05-11T14:12:12.574231,https://api.football-data.org/v4/
+2024,REGULAR_SEASON_TOTAL,Aston Villa FC,18,9,9,56,49,2025-05-11T14:12:12.574231,https://api.football-data.org/v4/
+2024,REGULAR_SEASON_TOTAL,Nottingham Forest FC,18,8,10,56,44,2025-05-11T14:12:12.574231,https://api.football-data.org/v4/
+2024,REGULAR_SEASON_TOTAL,Brentford FC,16,7,13,63,53,2025-05-11T14:12:12.574231,https://api.football-data.org/v4/
+2024,REGULAR_SEASON_TOTAL,Brighton & Hove Albion FC,14,13,9,59,56,2025-05-11T14:12:12.574231,https://api.football-data.org/v4/
+2024,REGULAR_SEASON_TOTAL,AFC Bournemouth,14,11,11,55,43,2025-05-11T14:12:12.574231,https://api.football-data.org/v4/
+2024,REGULAR_SEASON_TOTAL,Fulham FC,14,9,13,51,50,2025-05-11T14:12:12.574231,https://api.football-data.org/v4/
+2024,REGULAR_SEASON_TOTAL,Crystal Palace FC,12,13,11,46,48,2025-05-11T14:12:12.574231,https://api.football-data.org/v4/
+2024,REGULAR_SEASON_TOTAL,Everton FC,9,15,12,39,44,2025-05-11T14:12:12.574231,https://api.football-data.org/v4/
+2024,REGULAR_SEASON_TOTAL,Wolverhampton Wanderers FC,12,5,19,51,64,2025-05-11T14:12:12.574231,https://api.football-data.org/v4/
+2024,REGULAR_SEASON_TOTAL,West Ham United FC,10,10,16,42,59,2025-05-11T14:12:12.574231,https://api.football-data.org/v4/
+2024,REGULAR_SEASON_TOTAL,Manchester United FC,10,9,17,42,53,2025-05-11T14:12:12.574231,https://api.football-data.org/v4/
+2024,REGULAR_SEASON_TOTAL,Tottenham Hotspur FC,11,5,20,63,59,2025-05-11T14:12:12.574231,https://api.football-data.org/v4/
+2024,REGULAR_SEASON_TOTAL,Ipswich Town FC,4,10,22,35,77,2025-05-11T14:12:12.574231,https://api.football-data.org/v4/
+2024,REGULAR_SEASON_TOTAL,Leicester City FC,5,7,24,31,78,2025-05-11T14:12:12.574231,https://api.football-data.org/v4/
+2024,REGULAR_SEASON_TOTAL,Southampton FC,2,6,28,25,82,2025-05-11T14:12:12.574231,https://api.football-data.org/v4/
+2024,REGULAR_SEASON_HOME,Liverpool FC,14,3,1,41,15,2025-05-11T14:12:12.574231,https://api.football-data.org/v4/
+2024,REGULAR_SEASON_HOME,Manchester City FC,12,3,3,40,22,2025-05-11T14:12:12.574231,https://api.football-data.org/v4/
+2024,REGULAR_SEASON_HOME,Newcastle United FC,12,2,4,40,19,2025-05-11T14:12:12.574231,https://api.football-data.org/v4/
+2024,REGULAR_SEASON_HOME,Chelsea FC,11,5,2,34,18,2025-05-11T14:12:12.574231,https://api.football-data.org/v4/
+2024,REGULAR_SEASON_HOME,Aston Villa FC,10,7,1,32,20,2025-05-11T14:12:12.574231,https://api.football-data.org/v4/
+2024,REGULAR_SEASON_HOME,Arsenal FC,10,6,2,34,17,2025-05-11T14:12:12.574231,https://api.football-data.org/v4/
+2024,REGULAR_SEASON_HOME,Nottingham Forest FC,9,5,4,26,15,2025-05-11T14:12:12.574231,https://api.football-data.org/v4/
+2024,REGULAR_SEASON_HOME,Brentford FC,9,4,5,38,32,2025-05-11T14:12:12.574231,https://api.football-data.org/v4/
+2024,REGULAR_SEASON_HOME,Brighton & Hove Albion FC,7,8,3,27,24,2025-05-11T14:12:12.574231,https://api.football-data.org/v4/
+2024,REGULAR_SEASON_HOME,Fulham FC,7,5,6,27,28,2025-05-11T14:12:12.574231,https://api.football-data.org/v4/
+2024,REGULAR_SEASON_HOME,AFC Bournemouth,7,4,7,21,16,2025-05-11T14:12:12.574231,https://api.football-data.org/v4/
+2024,REGULAR_SEASON_HOME,Crystal Palace FC,5,7,6,20,24,2025-05-11T14:12:12.574231,https://api.football-data.org/v4/
+2024,REGULAR_SEASON_HOME,Tottenham Hotspur FC,6,3,9,34,31,2025-05-11T14:12:12.574231,https://api.football-data.org/v4/
+2024,REGULAR_SEASON_HOME,Everton FC,4,9,5,24,23,2025-05-11T14:12:12.574231,https://api.football-data.org/v4/
+2024,REGULAR_SEASON_HOME,Manchester United FC,6,3,9,21,28,2025-05-11T14:12:12.574231,https://api.football-data.org/v4/
+2024,REGULAR_SEASON_HOME,Wolverhampton Wanderers FC,6,2,10,26,31,2025-05-11T14:12:12.574231,https://api.football-data.org/v4/
+2024,REGULAR_SEASON_HOME,West Ham United FC,5,5,8,22,32,2025-05-11T14:12:12.574231,https://api.football-data.org/v4/
+2024,REGULAR_SEASON_HOME,Leicester City FC,3,3,12,13,34,2025-05-11T14:12:12.574231,https://api.football-data.org/v4/
+2024,REGULAR_SEASON_HOME,Ipswich Town FC,1,4,13,13,41,2025-05-11T14:12:12.574231,https://api.football-data.org/v4/
+2024,REGULAR_SEASON_HOME,Southampton FC,1,3,14,12,45,2025-05-11T14:12:12.574231,https://api.football-data.org/v4/
+2024,REGULAR_SEASON_AWAY,Liverpool FC,11,5,2,42,22,2025-05-11T14:12:12.574231,https://api.football-data.org/v4/
+2024,REGULAR_SEASON_AWAY,Arsenal FC,8,8,2,32,16,2025-05-11T14:12:12.574231,https://api.football-data.org/v4/
+2024,REGULAR_SEASON_AWAY,Nottingham Forest FC,9,3,6,30,29,2025-05-11T14:12:12.574231,https://api.football-data.org/v4/
+2024,REGULAR_SEASON_AWAY,AFC Bournemouth,7,7,4,34,27,2025-05-11T14:12:12.574231,https://api.football-data.org/v4/
+2024,REGULAR_SEASON_AWAY,Newcastle United FC,8,4,6,28,26,2025-05-11T14:12:12.574231,https://api.football-data.org/v4/
+2024,REGULAR_SEASON_AWAY,Crystal Palace FC,7,6,5,26,24,2025-05-11T14:12:12.574231,https://api.football-data.org/v4/
+2024,REGULAR_SEASON_AWAY,Manchester City FC,7,5,6,27,21,2025-05-11T14:12:12.574231,https://api.football-data.org/v4/
+2024,REGULAR_SEASON_AWAY,Brighton & Hove Albion FC,7,5,6,32,32,2025-05-11T14:12:12.574231,https://api.football-data.org/v4/
+2024,REGULAR_SEASON_AWAY,Aston Villa FC,8,2,8,24,29,2025-05-11T14:12:12.574231,https://api.football-data.org/v4/
+2024,REGULAR_SEASON_AWAY,Chelsea FC,7,4,7,28,25,2025-05-11T14:12:12.574231,https://api.football-data.org/v4/
+2024,REGULAR_SEASON_AWAY,Fulham FC,7,4,7,24,22,2025-05-11T14:12:12.574231,https://api.football-data.org/v4/
+2024,REGULAR_SEASON_AWAY,Brentford FC,7,3,8,25,21,2025-05-11T14:12:12.574231,https://api.football-data.org/v4/
+2024,REGULAR_SEASON_AWAY,Everton FC,5,6,7,15,21,2025-05-11T14:12:12.574231,https://api.football-data.org/v4/
+2024,REGULAR_SEASON_AWAY,Wolverhampton Wanderers FC,6,3,9,25,33,2025-05-11T14:12:12.574231,https://api.football-data.org/v4/
+2024,REGULAR_SEASON_AWAY,West Ham United FC,5,5,8,20,27,2025-05-11T14:12:12.574231,https://api.football-data.org/v4/
+2024,REGULAR_SEASON_AWAY,Manchester United FC,4,6,8,21,25,2025-05-11T14:12:12.574231,https://api.football-data.org/v4/
+2024,REGULAR_SEASON_AWAY,Tottenham Hotspur FC,5,2,11,29,28,2025-05-11T14:12:12.574231,https://api.football-data.org/v4/
+2024,REGULAR_SEASON_AWAY,Ipswich Town FC,3,6,9,22,36,2025-05-11T14:12:12.574231,https://api.football-data.org/v4/
+2024,REGULAR_SEASON_AWAY,Leicester City FC,2,4,12,18,44,2025-05-11T14:12:12.574231,https://api.football-data.org/v4/
+2024,REGULAR_SEASON_AWAY,Southampton FC,1,3,14,13,37,2025-05-11T14:12:12.574231,https://api.football-data.org/v4/

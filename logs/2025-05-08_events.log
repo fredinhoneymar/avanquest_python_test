@@ -1,0 +1,227 @@
+2025-05-08 15:33:45,741 - INFO - Configuration loaded from /mnt/c/Users/Utilisateur/OneDrive/Bureau/Avanquest_TEST/python/test/config.yaml
+2025-05-08 15:33:45,763 - INFO - Making 2 API calls for different parameter combinations
+2025-05-08 15:33:45,764 - INFO - Using cached response for https://api.football-data.org/v4/competitions/PL/standings/{'season': 2023}
+2025-05-08 15:33:45,764 - INFO - Using cached response for https://api.football-data.org/v4/competitions/PL/standings/{'season': 2024}
+2025-05-08 15:33:45,765 - INFO - Processed standings data for season 2023
+2025-05-08 15:33:45,765 - INFO - Processed standings data for season 2024
+2025-05-08 15:33:45,767 - INFO - Successfully processed 120 team records from 2 data sets
+2025-05-08 15:34:17,753 - INFO - Configuration loaded from /mnt/c/Users/Utilisateur/OneDrive/Bureau/Avanquest_TEST/python/test/config.yaml
+2025-05-08 15:34:17,778 - INFO - Making 2 API calls for different parameter combinations
+2025-05-08 15:34:17,778 - INFO - Using cached response for GET:https://api.football-data.org/v4/competitions/PL/standings:{"season": 2023}:{}
+2025-05-08 15:34:17,779 - INFO - Using cached response for GET:https://api.football-data.org/v4/competitions/PL/standings:{"season": 2024}:{}
+2025-05-08 15:34:17,779 - INFO - Processed standings data for season 2023
+2025-05-08 15:34:17,780 - INFO - Processed standings data for season 2024
+2025-05-08 15:34:17,780 - INFO - Successfully processed 120 team records from 2 data sets
+2025-05-08 15:35:15,041 - INFO - Configuration loaded from /mnt/c/Users/Utilisateur/OneDrive/Bureau/Avanquest_TEST/python/test/config.yaml
+2025-05-08 15:35:15,083 - INFO - Making 2 API calls for different parameter combinations
+2025-05-08 15:35:15,083 - INFO - Using cached response for https://api.football-data.org/v4/competitions/PL/standings{"season": 2023}
+2025-05-08 15:35:15,084 - INFO - Using cached response for https://api.football-data.org/v4/competitions/PL/standings{"season": 2024}
+2025-05-08 15:35:15,085 - INFO - Processed standings data for season 2023
+2025-05-08 15:35:15,085 - INFO - Processed standings data for season 2024
+2025-05-08 15:35:15,086 - INFO - Successfully processed 120 team records from 2 data sets
+2025-05-08 15:36:38,415 - INFO - Configuration loaded from /mnt/c/Users/Utilisateur/OneDrive/Bureau/Avanquest_TEST/python/test/config.yaml
+2025-05-08 15:36:38,437 - INFO - Making 2 API calls for different parameter combinations
+2025-05-08 15:36:38,437 - INFO - Using cached response for https://api.football-data.org/v4/competitions/PL/standings{"season": 2023}
+2025-05-08 15:36:38,438 - INFO - Using cached response for https://api.football-data.org/v4/competitions/PL/standings{"season": 2024}
+2025-05-08 15:36:38,438 - INFO - Processed standings data for season 2023
+2025-05-08 15:36:38,439 - INFO - Processed standings data for season 2024
+2025-05-08 15:36:38,439 - INFO - Successfully processed 120 team records from 2 data sets
+2025-05-08 15:36:56,304 - INFO - Configuration loaded from /mnt/c/Users/Utilisateur/OneDrive/Bureau/Avanquest_TEST/python/test/config.yaml
+2025-05-08 15:36:56,325 - INFO - Making 2 API calls for different parameter combinations
+2025-05-08 15:36:56,325 - ERROR - Exception during API call: the JSON object must be str, bytes or bytearray, not dict
+2025-05-08 15:36:56,335 - ERROR - Exception during API call: the JSON object must be str, bytes or bytearray, not dict
+2025-05-08 15:36:56,337 - WARNING - Failed parameter combinations:
+2025-05-08 15:36:56,337 - WARNING - - {'season': 2023}: the JSON object must be str, bytes or bytearray, not dict
+2025-05-08 15:36:56,338 - WARNING - - {'season': 2024}: the JSON object must be str, bytes or bytearray, not dict
+2025-05-08 15:38:43,798 - INFO - Configuration loaded from /mnt/c/Users/Utilisateur/OneDrive/Bureau/Avanquest_TEST/python/test/config.yaml
+2025-05-08 15:38:43,820 - INFO - Making 2 API calls for different parameter combinations
+2025-05-08 15:38:43,820 - INFO - Using cached response for https://api.football-data.org/v4/competitions/PL/standings?dict_keys(['season'])=dict_values([2023])
+2025-05-08 15:38:43,821 - INFO - Using cached response for https://api.football-data.org/v4/competitions/PL/standings?dict_keys(['season'])=dict_values([2024])
+2025-05-08 15:38:43,821 - INFO - Processed standings data for season 2023
+2025-05-08 15:38:43,822 - INFO - Processed standings data for season 2024
+2025-05-08 15:38:43,822 - INFO - Successfully processed 120 team records from 2 data sets
+2025-05-08 15:39:22,203 - INFO - Configuration loaded from /mnt/c/Users/Utilisateur/OneDrive/Bureau/Avanquest_TEST/python/test/config.yaml
+2025-05-08 15:39:22,224 - INFO - Making 2 API calls for different parameter combinations
+2025-05-08 15:39:22,225 - INFO - Using cached response for https://api.football-data.org/v4/competitions/PL/standings?<built-in method keys of dict object at 0x7f4cda45d5c0>=<built-in method values of dict object at 0x7f4cda45d5c0>
+2025-05-08 15:39:22,225 - INFO - Using cached response for https://api.football-data.org/v4/competitions/PL/standings?<built-in method keys of dict object at 0x7f4cda45d6c0>=<built-in method values of dict object at 0x7f4cda45d6c0>
+2025-05-08 15:39:22,226 - INFO - Processed standings data for season 2023
+2025-05-08 15:39:22,226 - INFO - Processed standings data for season 2024
+2025-05-08 15:39:22,226 - INFO - Successfully processed 120 team records from 2 data sets
+2025-05-08 15:41:07,264 - INFO - Configuration loaded from /mnt/c/Users/Utilisateur/OneDrive/Bureau/Avanquest_TEST/python/test/config.yaml
+2025-05-08 15:41:07,285 - INFO - Making 2 API calls for different parameter combinations
+2025-05-08 15:41:07,285 - INFO - Using cached response for https://api.football-data.org/v4/competitions/PL/standings?season=2023
+2025-05-08 15:41:07,286 - INFO - Using cached response for https://api.football-data.org/v4/competitions/PL/standings?season=2024
+2025-05-08 15:41:07,287 - INFO - Processed standings data for season 2023
+2025-05-08 15:41:07,287 - INFO - Processed standings data for season 2024
+2025-05-08 15:41:07,288 - INFO - Successfully processed 120 team records from 2 data sets
+2025-05-08 15:42:42,495 - INFO - Configuration loaded from /mnt/c/Users/Utilisateur/OneDrive/Bureau/Avanquest_TEST/python/test/config.yaml
+2025-05-08 15:42:42,516 - INFO - Making 3 API calls for different parameter combinations
+2025-05-08 15:42:42,517 - INFO - Making GET request to https://api.football-data.org/v4/competitions/PL/standings with params: {'season': 2022}
+2025-05-08 15:42:43,296 - ERROR - Exception during API call: 403 Client Error:  for url: https://api.football-data.org/v4/competitions/PL/standings?season=2022
+2025-05-08 15:42:43,303 - INFO - Using cached response for https://api.football-data.org/v4/competitions/PL/standings?season=2023
+2025-05-08 15:42:43,304 - INFO - Using cached response for https://api.football-data.org/v4/competitions/PL/standings?season=2024
+2025-05-08 15:42:43,304 - WARNING - Failed parameter combinations:
+2025-05-08 15:42:43,304 - WARNING - - {'season': 2022}: 403 Client Error:  for url: https://api.football-data.org/v4/competitions/PL/standings?season=2022
+2025-05-08 15:42:43,305 - INFO - Processed standings data for season 2023
+2025-05-08 15:42:43,305 - INFO - Processed standings data for season 2024
+2025-05-08 15:42:43,306 - INFO - Successfully processed 120 team records from 2 datasets
+2025-05-08 15:50:28,902 - INFO - Configuration loaded from /mnt/c/Users/Utilisateur/OneDrive/Bureau/Avanquest_TEST/python/test/config.yaml
+2025-05-08 15:50:28,923 - INFO - Making 2 API calls for different parameter combinations
+2025-05-08 15:50:28,924 - INFO - Using cached response for https://api.football-data.org/v4/competitions/PL/standings?season=2023
+2025-05-08 15:50:28,924 - INFO - Using cached response for https://api.football-data.org/v4/competitions/PL/standings?season=2024
+2025-05-08 15:50:28,925 - INFO - Processed standings data for season 2023
+2025-05-08 15:50:28,925 - INFO - Processed standings data for season 2024
+2025-05-08 15:50:28,926 - INFO - Successfully processed 120 team records from 2 datasets
+2025-05-08 15:57:11,007 - INFO - Configuration loaded from /mnt/c/Users/Utilisateur/OneDrive/Bureau/Avanquest_TEST/python/test/config.yaml
+2025-05-08 15:57:11,029 - INFO - Making 2 API calls for different parameter combinations
+2025-05-08 15:57:11,033 - INFO - Using cached response for https://api.football-data.org/v4/competitions/PL/standings?season=2023
+2025-05-08 15:57:11,033 - INFO - Using cached response for https://api.football-data.org/v4/competitions/PL/standings?season=2024
+2025-05-08 15:57:11,034 - INFO - Processed standings data for season 2023
+2025-05-08 15:57:11,035 - INFO - Processed standings data for season 2024
+2025-05-08 15:57:11,035 - INFO - Successfully processed 120 team records from 2 datasets
+2025-05-08 15:57:32,969 - INFO - Configuration loaded from /mnt/c/Users/Utilisateur/OneDrive/Bureau/Avanquest_TEST/python/test/config.yaml
+2025-05-08 15:57:32,979 - INFO - Making 2 API calls for different parameter combinations
+2025-05-08 15:57:32,980 - INFO - Making GET request to https://api.football-data.org/v4/competitions/PL/standings with params: {'season': 2023}
+2025-05-08 15:57:32,981 - INFO - Making GET request to https://api.football-data.org/v4/competitions/PL/standings with params: {'season': 2024}
+2025-05-08 15:57:33,780 - INFO - Data fetched with status code 200
+2025-05-08 15:57:33,814 - INFO - Data fetched with status code 200
+2025-05-08 15:57:33,815 - INFO - Processed standings data for season 2023
+2025-05-08 15:57:33,815 - INFO - Processed standings data for season 2024
+2025-05-08 15:57:33,815 - INFO - Successfully processed 120 team records from 2 datasets
+2025-05-08 15:58:53,263 - INFO - Configuration loaded from /mnt/c/Users/Utilisateur/OneDrive/Bureau/Avanquest_TEST/python/test/config.yaml
+2025-05-08 15:58:53,272 - INFO - Making 2 API calls for different parameter combinations
+2025-05-08 15:58:53,273 - INFO - Making request https://api.football-data.org/v4/competitions/PL/standings?season=2023
+2025-05-08 15:58:53,274 - INFO - Making request https://api.football-data.org/v4/competitions/PL/standings?season=2024
+2025-05-08 15:58:53,974 - INFO - Data fetched with status code 200 for {'season': 2023}
+2025-05-08 15:58:53,980 - INFO - Data fetched with status code 200 for {'season': 2024}
+2025-05-08 15:58:53,981 - INFO - Processed standings data for season 2023
+2025-05-08 15:58:53,981 - INFO - Processed standings data for season 2024
+2025-05-08 15:58:53,982 - INFO - Successfully processed 120 team records from 2 datasets
+2025-05-08 15:59:50,487 - INFO - Configuration loaded from /mnt/c/Users/Utilisateur/OneDrive/Bureau/Avanquest_TEST/python/test/config.yaml
+2025-05-08 15:59:50,510 - INFO - Making 2 API calls for different parameter combinations
+2025-05-08 15:59:50,512 - INFO - Using cached response for https://api.football-data.org/v4/competitions/PL/standings?season=2023
+2025-05-08 15:59:50,512 - INFO - Using cached response for https://api.football-data.org/v4/competitions/PL/standings?season=2024
+2025-05-08 15:59:50,514 - INFO - Processed standings data for season 2023
+2025-05-08 15:59:50,514 - INFO - Processed standings data for season 2024
+2025-05-08 15:59:50,514 - INFO - Successfully processed 120 team records from 2 datasets
+2025-05-08 16:00:01,552 - INFO - Configuration loaded from /mnt/c/Users/Utilisateur/OneDrive/Bureau/Avanquest_TEST/python/test/config.yaml
+2025-05-08 16:00:01,562 - INFO - Making 2 API calls for different parameter combinations
+2025-05-08 16:00:01,564 - INFO - Making request GEThttps://api.football-data.org/v4/competitions/PL/standings?season=2023
+2025-05-08 16:00:01,564 - INFO - Making request GEThttps://api.football-data.org/v4/competitions/PL/standings?season=2024
+2025-05-08 16:00:02,337 - INFO - Data fetched with status code 200 for {'season': 2023}
+2025-05-08 16:00:02,390 - INFO - Data fetched with status code 200 for {'season': 2024}
+2025-05-08 16:00:02,391 - INFO - Processed standings data for season 2023
+2025-05-08 16:00:02,391 - INFO - Processed standings data for season 2024
+2025-05-08 16:00:02,392 - INFO - Successfully processed 120 team records from 2 datasets
+2025-05-08 16:01:31,515 - INFO - Configuration loaded from /mnt/c/Users/Utilisateur/OneDrive/Bureau/Avanquest_TEST/python/test/config.yaml
+2025-05-08 16:01:31,538 - INFO - Making 2 API calls for different parameter combinations
+2025-05-08 16:01:31,539 - INFO - Using cached response for https://api.football-data.org/v4/competitions/PL/standings?season=2023
+2025-05-08 16:01:31,541 - INFO - Using cached response for https://api.football-data.org/v4/competitions/PL/standings?season=2024
+2025-05-08 16:01:31,542 - INFO - Processed standings data for season 2023
+2025-05-08 16:01:31,542 - INFO - Processed standings data for season 2024
+2025-05-08 16:01:31,543 - INFO - Successfully processed 120 team records from 2 datasets
+2025-05-08 16:01:39,429 - INFO - Configuration loaded from /mnt/c/Users/Utilisateur/OneDrive/Bureau/Avanquest_TEST/python/test/config.yaml
+2025-05-08 16:01:39,438 - INFO - Making 2 API calls for different parameter combinations
+2025-05-08 16:01:39,439 - INFO - Making request GEThttps://api.football-data.org/v4/competitions/PL/standings?season=2023
+2025-05-08 16:01:39,440 - INFO - Making request GEThttps://api.football-data.org/v4/competitions/PL/standings?season=2024
+2025-05-08 16:01:40,203 - INFO - Data fetched with status code 200 for {'season': 2024}
+2025-05-08 16:01:40,204 - INFO - Data fetched with status code 200 for {'season': 2023}
+2025-05-08 16:01:40,205 - INFO - Processed standings data for season 2024
+2025-05-08 16:01:40,205 - INFO - Processed standings data for season 2023
+2025-05-08 16:01:40,206 - INFO - Successfully processed 120 team records from 2 datasets
+2025-05-08 16:23:56,477 - INFO - Configuration loaded from /mnt/c/Users/Utilisateur/OneDrive/Bureau/Avanquest_TEST/python/test/config.yaml
+2025-05-08 16:23:56,477 - DEBUG - Configuration initialized
+2025-05-08 16:23:56,488 - DEBUG - Cache cleanup: 0 expired file(s) removed out of 2 total file(s) (TTL: 86400s)
+2025-05-08 16:23:56,500 - DEBUG - Loaded 2 cached responses from disk
+2025-05-08 16:23:56,501 - DEBUG - APIConnector initialized
+2025-05-08 16:23:56,501 - INFO - Making 2 API calls for different parameter combinations
+2025-05-08 16:23:56,501 - DEBUG - Parameter combinations: [
+  {
+    "season": 2023
+  },
+  {
+    "season": 2024
+  }
+]
+2025-05-08 16:23:56,503 - DEBUG - Making API call to /competitions/PL/standings with params: season=2023
+2025-05-08 16:23:56,503 - DEBUG - Making API call to /competitions/PL/standings with params: season=2024
+2025-05-08 16:23:56,503 - DEBUG - Endpoint set to {'path': '/competitions/PL/standings'}
+2025-05-08 16:23:56,504 - DEBUG - Endpoint set to {'path': '/competitions/PL/standings'}
+2025-05-08 16:23:56,504 - INFO - Using cached response for https://api.football-data.org/v4/competitions/PL/standings?season=2023
+2025-05-08 16:23:56,505 - INFO - Using cached response for https://api.football-data.org/v4/competitions/PL/standings?season=2024
+2025-05-08 16:23:56,505 - DEBUG - API call to /competitions/PL/standings with season=2023 succeeded
+2025-05-08 16:23:56,505 - DEBUG - API call to /competitions/PL/standings with season=2024 succeeded
+2025-05-08 16:23:56,507 - INFO - Processed standings data for season 2023
+2025-05-08 16:23:56,507 - INFO - Processed standings data for season 2024
+2025-05-08 16:23:56,507 - INFO - Successfully processed 120 team records from 2 datasets
+2025-05-08 16:24:15,948 - INFO - Configuration loaded from /mnt/c/Users/Utilisateur/OneDrive/Bureau/Avanquest_TEST/python/test/config.yaml
+2025-05-08 16:24:15,949 - DEBUG - Configuration initialized
+2025-05-08 16:24:15,959 - DEBUG - Cache cleanup: 0 expired file(s) removed out of 2 total file(s) (TTL: 86400s)
+2025-05-08 16:24:15,971 - DEBUG - Loaded 2 cached responses from disk
+2025-05-08 16:24:15,972 - DEBUG - APIConnector initialized
+2025-05-08 16:24:15,972 - INFO - Making 2 API calls for different parameter combinations
+2025-05-08 16:24:15,972 - DEBUG - Parameter combinations: [
+  {
+    "season": 2023
+  },
+  {
+    "season": 2024
+  }
+]
+2025-05-08 16:24:15,974 - DEBUG - Making API call to /competitions/PL/standings with params: season=2023
+2025-05-08 16:24:15,974 - DEBUG - Making API call to /competitions/PL/standings with params: season=2024
+2025-05-08 16:24:15,974 - DEBUG - Endpoint set to {'path': '/competitions/PL/standings'}
+2025-05-08 16:24:15,975 - DEBUG - Endpoint set to {'path': '/competitions/PL/standings'}
+2025-05-08 16:24:15,975 - INFO - Using cached response for https://api.football-data.org/v4/competitions/PL/standings?season=2023
+2025-05-08 16:24:15,976 - INFO - Using cached response for https://api.football-data.org/v4/competitions/PL/standings?season=2024
+2025-05-08 16:24:15,976 - DEBUG - API call to /competitions/PL/standings with season=2023 succeeded
+2025-05-08 16:24:15,976 - DEBUG - API call to /competitions/PL/standings with season=2024 succeeded
+2025-05-08 16:24:15,977 - INFO - Processed standings data for season 2023
+2025-05-08 16:24:15,978 - INFO - Processed standings data for season 2024
+2025-05-08 16:24:15,978 - INFO - Successfully processed 120 team records from 2 datasets
+2025-05-08 16:25:23,748 - INFO - Configuration loaded from /mnt/c/Users/Utilisateur/OneDrive/Bureau/Avanquest_TEST/python/test/config.yaml
+2025-05-08 16:25:23,773 - INFO - Making 2 API calls for different parameter combinations
+2025-05-08 16:25:23,774 - INFO - Using cached response for https://api.football-data.org/v4/competitions/PL/standings?season=2023
+2025-05-08 16:25:23,775 - INFO - Using cached response for https://api.football-data.org/v4/competitions/PL/standings?season=2024
+2025-05-08 16:25:23,776 - INFO - Processed standings data for season 2023
+2025-05-08 16:25:23,776 - INFO - Processed standings data for season 2024
+2025-05-08 16:25:23,777 - INFO - Successfully processed 120 team records from 2 datasets
+2025-05-08 16:26:01,581 - INFO - Configuration loaded from /mnt/c/Users/Utilisateur/OneDrive/Bureau/Avanquest_TEST/python/test/config.yaml
+2025-05-08 16:26:01,605 - INFO - Making 2 API calls for different parameter combinations
+2025-05-08 16:26:01,606 - INFO - Using cached response for https://api.football-data.org/v4/competitions/PL/standings?season=2023
+2025-05-08 16:26:01,607 - INFO - Using cached response for https://api.football-data.org/v4/competitions/PL/standings?season=2024
+2025-05-08 16:26:01,608 - INFO - Processed standings data for season 2023
+2025-05-08 16:26:01,609 - INFO - Processed standings data for season 2024
+2025-05-08 16:26:01,609 - INFO - Successfully processed 120 team records from 2 datasets
+2025-05-08 16:29:26,913 - INFO - Configuration loaded from /mnt/c/Users/Utilisateur/OneDrive/Bureau/Avanquest_TEST/python/test/config.yaml
+2025-05-08 16:29:26,913 - DEBUG - Configuration initialized
+2025-05-08 16:29:26,923 - DEBUG - Cache cleanup: 0 expired file(s) removed out of 2 total file(s) (TTL: 86400s)
+2025-05-08 16:29:26,935 - DEBUG - Loaded 2 cached responses from disk
+2025-05-08 16:29:26,936 - DEBUG - APIConnector initialized
+2025-05-08 16:29:26,936 - INFO - Making 2 API calls for different parameter combinations
+2025-05-08 16:29:26,937 - DEBUG - Parameter combinations: [
+  {
+    "season": 2023
+  },
+  {
+    "season": 2024
+  }
+]
+2025-05-08 16:29:26,938 - DEBUG - Making API call to /competitions/PL/standings with params: season=2023
+2025-05-08 16:29:26,938 - DEBUG - Making API call to /competitions/PL/standings with params: season=2024
+2025-05-08 16:29:26,939 - DEBUG - Endpoint set to {'path': '/competitions/PL/standings'}
+2025-05-08 16:29:26,939 - DEBUG - Endpoint set to {'path': '/competitions/PL/standings'}
+2025-05-08 16:29:26,940 - INFO - Using cached response for https://api.football-data.org/v4/competitions/PL/standings?season=2023
+2025-05-08 16:29:26,940 - INFO - Using cached response for https://api.football-data.org/v4/competitions/PL/standings?season=2024
+2025-05-08 16:29:26,940 - DEBUG - API call to /competitions/PL/standings with season=2023 succeeded
+2025-05-08 16:29:26,941 - DEBUG - API call to /competitions/PL/standings with season=2024 succeeded
+2025-05-08 16:29:26,942 - INFO - Processed standings data for season 2023
+2025-05-08 16:29:26,942 - INFO - Processed standings data for season 2024
+2025-05-08 16:29:26,943 - INFO - Successfully processed 120 team records from 2 datasets
+2025-05-08 16:29:33,992 - INFO - Configuration loaded from /mnt/c/Users/Utilisateur/OneDrive/Bureau/Avanquest_TEST/python/test/config.yaml
+2025-05-08 16:29:34,013 - INFO - Making 2 API calls for different parameter combinations
+2025-05-08 16:29:34,014 - INFO - Using cached response for https://api.football-data.org/v4/competitions/PL/standings?season=2023
+2025-05-08 16:29:34,014 - INFO - Using cached response for https://api.football-data.org/v4/competitions/PL/standings?season=2024
+2025-05-08 16:29:34,016 - INFO - Processed standings data for season 2023
+2025-05-08 16:29:34,016 - INFO - Processed standings data for season 2024
+2025-05-08 16:29:34,016 - INFO - Successfully processed 120 team records from 2 datasets
