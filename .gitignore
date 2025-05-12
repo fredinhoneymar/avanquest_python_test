@@ -1,0 +1,8 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Output
+premier_league_2023_2024_stats.csv
