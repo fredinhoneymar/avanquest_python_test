@@ -4,8 +4,5 @@ __pycache__/
 .venv/
 venv/
 
-# API
-.env
-
 # Output
 premier_league_2023_2024_stats.csv
