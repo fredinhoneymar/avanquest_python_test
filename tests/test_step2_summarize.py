@@ -8,12 +8,11 @@ from step2_summarize import (
     read_csv_data,
     validate_years,
     clean_data,
-    align_team_name,
     create_plot_directory,
     draw_plots
 )
 
-# 测试数据
+# Test data
 @pytest.fixture
 def valid_data():
     return pd.DataFrame({
@@ -39,9 +38,9 @@ def data_with_missing():
     })
     return df
 
-# 测试 read_csv_data 函数
+# Test read_csv_data function
 def test_read_csv_data_success(tmp_path):
-    # 创建临时CSV文件
+    # Create temporary CSV file
     df = pd.DataFrame({
         'year': [2020],
         'teamName': ['Arsenal'],
@@ -54,7 +53,7 @@ def test_read_csv_data_success(tmp_path):
     file_path = tmp_path / "test.csv"
     df.to_csv(file_path, index=False)
     
-    # 测试读取
+    # Test reading
     result = read_csv_data(str(file_path))
     assert result is not None
     assert isinstance(result, pd.DataFrame)
@@ -65,25 +64,25 @@ def test_read_csv_data_file_not_found():
     result = read_csv_data('nonexistent.csv')
     assert result is None
 
-# 测试 validate_years 函数
+# Test validate_years function
 def test_validate_years_success(valid_data):
     is_valid, message = validate_years(valid_data)
     assert is_valid is True
-    assert "年份验证通过" in message
+    assert "Year verification passed" in message
 
 def test_validate_years_invalid_format():
     df = pd.DataFrame({'year': ['2020', '2021']})
     is_valid, message = validate_years(df)
     assert is_valid is False
-    assert "年份格式错误" in message
+    assert "Year format wrong" in message
 
 def test_validate_years_out_of_range():
     df = pd.DataFrame({'year': [1990, 2021]})
     is_valid, message = validate_years(df)
     assert is_valid is False
-    assert "年份超出范围" in message
+    assert "Year out of range" in message
 
-# 测试 clean_data 函数
+# Test clean_data function
 def test_clean_data_success(data_with_missing):
     result = clean_data(data_with_missing)
     assert result is not None
@@ -103,34 +102,15 @@ def test_clean_data_invalid_years():
     result = clean_data(df)
     assert result is None
 
-# 测试 align_team_name 函数
-def test_align_team_name_success(valid_data):
-    result = align_team_name(valid_data)
-    assert result is not None
-    assert len(result['teamName'].unique()) == 3
-    assert all(team in result['teamName'].unique() for team in ['Arsenal', 'Chelsea', 'Liverpool'])
 
-def test_align_team_name_no_common_teams():
-    df = pd.DataFrame({
-        'year': [2020, 2021],
-        'teamName': ['TeamA', 'TeamB'],
-        'won': [15, 20],
-        'draw': [5, 4],
-        'lost': [8, 6],
-        'goalsFor': [45, 55],
-        'goalsAgainst': [35, 25]
-    })
-    result = align_team_name(df)
-    assert result is None
-
-# 测试 create_plot_directory 函数
+# Test create_plot_directory function
 def test_create_plot_directory_success(tmp_path):
     plots_dir = tmp_path / "test_plots"
     result = create_plot_directory(str(plots_dir))
     assert result is True
     assert plots_dir.exists()
 
-# 测试 draw_plots 函数
+# Test draw_plots function
 def test_draw_plots_success(valid_data, tmp_path):
     plots_dir = tmp_path / "premier_league_plots"
     with patch('matplotlib.pyplot.figure') as mock_figure, \
@@ -140,7 +120,7 @@ def test_draw_plots_success(valid_data, tmp_path):
         mock_figure.return_value = MagicMock()
         mock_barplot.return_value = MagicMock()
         draw_plots(valid_data)
-        assert mock_savefig.call_count == len(STATS_COLUMNS)  # 使用STATS_COLUMNS的长度
+        assert mock_savefig.call_count == len(STATS_COLUMNS)  # Use length of STATS_COLUMNS
         assert mock_close.call_count == len(STATS_COLUMNS)
 
 def test_draw_plots_no_data():

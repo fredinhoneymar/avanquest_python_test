@@ -130,53 +130,6 @@ def clean_data(df):
         print(f"Error in data cleaning: {str(e)}")
         return None
 
-def align_team_name(df):
-    """
-    Align team names across different years to ensure consistent comparison.
-    Returns a DataFrame containing only teams that exist in all years.
-    
-    Args:
-        df (pandas.DataFrame): Input DataFrame containing team data
-        
-    Returns:
-        pandas.DataFrame: Filtered DataFrame with aligned team names or None if there was an error
-    """
-    if df is None:
-        return None
-        
-    try:
-        all_years = df['year'].unique()
-        print(f"All year: {all_years}")
-        teams_by_year = df.groupby('year')['teamName'].unique()
-
-        # Find teams that exist in all years
-        common_teams = set(teams_by_year.iloc[0])
-        for year_teams in teams_by_year[1:]:
-            common_teams = common_teams.intersection(set(year_teams))
-
-        if not common_teams:
-            print("Warning: No common teams found across all years")
-            return None
-
-        print("\nThe teams that exist in all years:")
-        print(sorted(list(common_teams)))
-
-        # Only keep data for teams that exist in all years
-        df_filtered = df[df['teamName'].isin(common_teams)]
-
-        # Show data by season and team group
-        print("\nData grouped by season and team (only teams that existed in all years are included):")
-        agg_dict = {col: 'sum' for col in STATS_COLUMNS}
-        print(df_filtered.groupby(['year', 'teamName']).agg(agg_dict).reset_index())
-        
-        return df_filtered
-    except KeyError as e:
-        print(f"Error: Missing required column {e}")
-        return None
-    except Exception as e:
-        print(f"Error in team name alignment: {str(e)}")
-        return None
-
 def create_plot_directory(plots_dir):
     """
     Create directory for plots with error handling
@@ -258,11 +211,8 @@ def main():
             # Clean the data
             df_cleaned = clean_data(df)
             if df_cleaned is not None:
-                # Align team names across years
-                # df_filtered = align_team_name(df_cleaned)
-                df_filtered = df_cleaned
                 # Create and save the plots
-                draw_plots(df_filtered)
+                draw_plots(df_cleaned)
         else:
             print("Program terminated due to data loading error.")
     except Exception as e:
