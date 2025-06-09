@@ -16,6 +16,9 @@ Run ```python step1_getcsv.py```
 The script retrieves data from football-data.org and saves the raw data as a CSV file named ```premier_league_stats.csv``` in the root directory.
 ![image](https://github.com/user-attachments/assets/22c3e7bb-c9a5-421b-8ee4-9f1dac175134)
 
+## CSV file
+premier_league_stats.csv, on root folder. 
+
 ## Clean the data and save the summaries as graphs
 Run ```python step2_summarize.py```  
 The script read data from CSV file, validate years, Clean the data by handling missing values using median imputation, then sort dataframe and save data as graphs in the fold ```/premier_league_plots/```.
