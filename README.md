@@ -26,3 +26,6 @@ As a result of the data summary, six graphs have been generated with the followi
 * "premier_league_plots\lost_by_team_and_year.png",
 * "premier_league_plots\goalsFor_by_team_and_year.png",
 * "premier_league_plots\goalsAgainst_by_team_and_year.png".
+
+Folder structure:
+![image](https://github.com/user-attachments/assets/41633cfd-0362-4448-8e70-756d6a82d899)
