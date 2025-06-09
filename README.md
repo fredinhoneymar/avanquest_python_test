@@ -17,7 +17,7 @@ The script retrieves data from football-data.org and saves the raw data as a CSV
 ![image](https://github.com/user-attachments/assets/22c3e7bb-c9a5-421b-8ee4-9f1dac175134)
 
 ## CSV file
-premier_league_stats.csv, on root folder. 
+"premier_league_stats.csv", on root folder. 
 
 ## Clean the data and save the summaries as graphs
 Run ```python step2_summarize.py```  
