@@ -39,8 +39,8 @@ As a result of the data summary, six graphs have been generated with the followi
 ![image](https://github.com/user-attachments/assets/41633cfd-0362-4448-8e70-756d6a82d899)
 
 ## Auto Deploy as MicroServices on AWS
-We can deploy these programs as microservices on AWS. I created 3 APIs on AWS using Lambda and docker ECR.
-If you want to refresh data from football-data.org, we can call the API namned ```https://y4zeduzvn3.execute-api.us-east-1.amazonaws.com/get_csv``` with Postman. This API can be invoked to retrieve and refresh the incremental data.
-If you want to query data from the CSV file (stored on AWS S3), you can use the API ```https://y4zeduzvn3.execute-api.us-east-1.amazonaws.com/query_kpi_from_csv```with Postman. This API can be invoked to return JSON data for your custom query.
-![image](https://github.com/user-attachments/assets/c396de3e-d1a7-4465-a20d-c35434ea788b)
-These measures make it easier for BI teams to use this processed data and perform personalized queries.
+We can deploy these programs as microservices on AWS. I created 3 APIs on AWS using Lambda and docker ECR.   
+If you want to refresh data from football-data.org, we can call the API namned ```https://y4zeduzvn3.execute-api.us-east-1.amazonaws.com/get_csv``` with Postman. This API can be invoked to retrieve and refresh the incremental data.   
+If you want to query data from the CSV file (stored on AWS S3), you can use the API ```https://y4zeduzvn3.execute-api.us-east-1.amazonaws.com/query_kpi_from_csv```with Postman. This API can be invoked to return JSON data for your custom query.   
+![image](https://github.com/user-attachments/assets/c396de3e-d1a7-4465-a20d-c35434ea788b)   
+These measures make it easier for BI teams to use this processed data and perform personalized queries.    
