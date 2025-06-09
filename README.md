@@ -57,4 +57,6 @@ These measures make it easier for BI teams to use this processed data and perfor
 ## Demo
 ![image](https://github.com/user-attachments/assets/9b0ad46a-9799-4083-b166-ac72c5f58e75)
 
-
+## Program limitation
+This token may be a token for the free package, so only data for the past two years can be obtained, and the requested data for 2020-2022 cannot be obtained.   
+If we have a token of higher-level packagem, we will access to the requested data for 2020 to 2023.
