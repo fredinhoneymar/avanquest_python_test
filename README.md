@@ -18,7 +18,7 @@ The script retrieves data from football-data.org and saves the raw data as a CSV
 
 ## Clean the data and save the summaries as graphs
 Run ```python step2_summarize.py```  
-The script read data from CSV file, validate years, Clean the data by handling missing values using median imputation, then sort dataframe and save data as graphs in the fold ```/premier_league_plots```.
+The script read data from CSV file, validate years, Clean the data by handling missing values using median imputation, then sort dataframe and save data as graphs in the fold ```/premier_league_plots/```.
 ![image](https://github.com/user-attachments/assets/3f6f1878-ad7c-4b84-be00-c39dec0eeae7)
 As a result of the data summary, six graphs have been generated with the following names:
 * "premier_league_plots\won_by_team_and_year.png",
@@ -35,5 +35,12 @@ As a result of the data summary, six graphs have been generated with the followi
 ![goalsAgainst_by_team_and_year](https://github.com/user-attachments/assets/f29e5c24-c006-47a3-9b0f-5f6fa81949ca)
 
 
-Folder structure:  
+## Folder structure:  
 ![image](https://github.com/user-attachments/assets/41633cfd-0362-4448-8e70-756d6a82d899)
+
+## Auto Deploy as MicroServices on AWS
+We can deploy these programs as microservices on AWS. I created 3 APIs on AWS using Lambda and docker ECR.
+If you want to refresh data from football-data.org, we can call the API namned ```https://y4zeduzvn3.execute-api.us-east-1.amazonaws.com/get_csv``` with Postman. This API can be invoked to retrieve and refresh the incremental data.
+If you want to query data from the CSV file (stored on AWS S3), you can use the API ```https://y4zeduzvn3.execute-api.us-east-1.amazonaws.com/query_kpi_from_csv```with Postman. This API can be invoked to return JSON data for your custom query.
+![image](https://github.com/user-attachments/assets/c396de3e-d1a7-4465-a20d-c35434ea788b)
+These measures make it easier for BI teams to use this processed data and perform personalized queries.
