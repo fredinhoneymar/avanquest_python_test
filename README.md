@@ -34,6 +34,15 @@ As a result of the data summary, six graphs have been generated with the followi
 ![goalsFor_by_team_and_year](https://github.com/user-attachments/assets/e239c49b-493e-483e-827a-d9feeb52d6b8)
 ![goalsAgainst_by_team_and_year](https://github.com/user-attachments/assets/f29e5c24-c006-47a3-9b0f-5f6fa81949ca)
 
+## Test 
+I use pytest. 
+There are two test files named ```tests\test_step1_getcsv.py``` and ```tests\test_step2_summarize.py```. 
+You can run ``` python -m pytest tests\test_step1_getcsv.py```.   
+![image](https://github.com/user-attachments/assets/ea858a4e-2b38-4ebe-aa26-0c02bd3c99f8)
+You can run ```python -m pytest tests\test_step2_summarize.py```.
+![image](https://github.com/user-attachments/assets/e3c71737-69df-4598-af8f-87ed3f92d859)
+
+
 
 ## Folder structure:  
 ![image](https://github.com/user-attachments/assets/41633cfd-0362-4448-8e70-756d6a82d899)
