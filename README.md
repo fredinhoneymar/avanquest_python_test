@@ -29,6 +29,10 @@ As a result of the data summary, six graphs have been generated with the followi
 
 ## graphs
 ![won_by_team_and_year](https://github.com/user-attachments/assets/7c9f3475-89d9-43fe-9605-f1f35485b011)
+![draw_by_team_and_year](https://github.com/user-attachments/assets/b739f62d-0df2-4d33-b4e8-9135160589bc)
+![lost_by_team_and_year](https://github.com/user-attachments/assets/a32576d0-5bea-4f53-8656-101d7cb374df)
+![goalsFor_by_team_and_year](https://github.com/user-attachments/assets/e239c49b-493e-483e-827a-d9feeb52d6b8)
+![goalsAgainst_by_team_and_year](https://github.com/user-attachments/assets/f29e5c24-c006-47a3-9b0f-5f6fa81949ca)
 
 
 Folder structure:  
